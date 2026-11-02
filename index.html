@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SanguinarisMC — Tres caminos. Una sola noche.</title>
+  <meta name="description" content="Conoce SanguinarisMC: un proyecto de supervivencia sobrenatural para Minecraft con vampiros, hombres lobo, cazadores, refugios y un mundo que recuerda.">
+  <meta name="theme-color" content="#0b0b10">
+  <link rel="canonical" href="https://codigoultima.github.io/SanguinarisMC/">
+  <meta property="og:title" content="SanguinarisMC — Tres caminos. Una sola noche.">
+  <meta property="og:description" content="Tres caminos. Una sola noche. Un servidor de supervivencia sobrenatural en desarrollo.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://codigoultima.github.io/SanguinarisMC/">
+  <meta property="og:image" content="https://codigoultima.github.io/SanguinarisMC/assets/hero.svg">
+  <meta property="og:image:alt" content="Valle gótico bajo la luna con un castillo, pinos y tres siluetas en el camino.">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="SanguinarisMC, ir al inicio">
+      <img src="assets/favicon.svg" alt="" width="38" height="38">
+      <span class="brand-text">Sanguinaris<span>MC</span></span>
+    </a>
+    <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
+      <a href="#mundo">El mundo</a>
+      <a href="#facciones">Facciones</a>
+      <a href="#novedades">Novedades</a>
+      <a href="#avance">Avance</a>
+      <a href="assets/SanguinarisMC-Dossier.pdf">Dossier <span class="pdf-tag">PDF</span></a>
+    </nav>
+    <a class="header-cta" href="#pronto">Próximamente</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menú">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-art">
+        <img src="assets/hero.svg" alt="Un valle gótico bajo la luna con un castillo lejano, pinos, niebla y tres siluetas en el camino.">
+      </div>
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="eyebrow"><span class="pulse" aria-hidden="true"></span> Próximamente · Proyecto en desarrollo</p>
+        <h1 id="hero-title"><span>Sanguinaris</span><em>MC</em></h1>
+        <p class="hero-line">Tres caminos. Una sola noche.</p>
+        <p class="hero-copy">Un servidor de supervivencia sobrenatural donde vampiros, hombres lobo y cazadores comparten un mundo que cambia contigo. Todavía no está abierto al público: esto es una ventana a lo que ya estamos construyendo.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#mundo">Descubrir el mundo</a>
+          <a class="button button-ghost" href="assets/SanguinarisMC-Dossier.pdf">Leer el dossier <span class="button-meta">PDF</span></a>
+        </div>
+        <p class="hero-footnote">Versión interna 0.10.0 · Servidor de pruebas cerrado · Apertura por anunciar.</p>
+      </div>
+      <a class="scroll-cue" href="#manifiesto" aria-label="Bajar a la presentación"><span></span>Desliza</a>
+    </section>
+
+    <section class="manifesto section" id="manifiesto">
+      <div class="section-head reveal">
+        <p class="kicker">El proyecto</p>
+        <h2>No es un lanzamiento.<br>Es el comienzo de algo que estamos cuidando.</h2>
+      </div>
+      <div class="manifesto-grid">
+        <div class="reveal">
+          <p class="lead">SanguinarisMC nace de una idea sencilla: que la noche de Minecraft pueda sentirse como un mundo propio, con facciones que recuerdan, NPCs que viven y decisiones que dejan huella.</p>
+          <p>Lo que ves en esta página no es una promesa de fecha ni una tienda. Es una selección honesta de lo que ya funciona en pruebas internas: facciones, contratos, refugios, NPCs, clima, diplomacia, asedios y habilidades.</p>
+          <p>El servidor todavía no está listo para recibir jugadores. Cuando lo esté, se anunciará aquí. Mientras tanto, puedes leer el mundo, conocer los tres caminos y descargar el dossier.</p>
+        </div>
+        <aside class="manifesto-note reveal">
+          <p class="note-label">Estado actual</p>
+          <dl>
+            <div><dt>Proyecto</dt><dd>En desarrollo</dd></div>
+            <div><dt>Base jugable</dt><dd>Probada internamente</dd></div>
+            <div><dt>Versión interna</dt><dd>0.10.0</dd></div>
+            <div><dt>Servidor</dt><dd>Pruebas cerradas</dd></div>
+            <div><dt>Fecha pública</dt><dd>Por anunciar</dd></div>
+          </dl>
+          <p class="note-small">Esta página presenta el proyecto; el servidor sigue en pruebas cerradas y no tiene fecha de apertura anunciada.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="factions section" id="facciones">
+      <div class="section-head reveal">
+        <p class="kicker">Tres caminos</p>
+        <h2>La noche te va a preguntar quién eres.</h2>
+        <p class="section-sub">Cada facción cambia tu recurso, tus habilidades, tu forma de moverte y la manera en que el mundo te mira. La elección no es un disfraz: es una forma de jugar.</p>
+      </div>
+      <div class="faction-grid">
+        <article class="faction-card reveal">
+          <div class="faction-art"><img src="assets/vampire.svg" alt="Cáliz carmesí bajo la luna en una cripta."></div>
+          <div class="faction-body">
+            <p class="faction-index">01 · La noche como refugio</p>
+            <h3>Vampiros</h3>
+            <p>Reinan cuando el sol se va. La sangre es poder y también hambre: administrarla es parte de la elección.</p>
+            <ul>
+              <li>Aura de oscuridad contra rivales de menor rango.</li>
+              <li>Visión nocturna, caída segura y vuelo de murciélago.</li>
+            </ul>
+            <p class="faction-whisper">“La noche no se posee. Se administra.”</p>
+          </div>
+        </article>
+        <article class="faction-card reveal">
+          <div class="faction-art"><img src="assets/werewolf.svg" alt="Lobo bajo la luna entre pinos."></div>
+          <div class="faction-body">
+            <p class="faction-index">02 · La manada como fuerza</p>
+            <h3>Hombres lobo</h3>
+            <p>La forma lupina no espera a la luna llena. Con el rango suficiente, el cuerpo cambia y el equipo se queda atrás.</p>
+            <ul>
+              <li>Transformación por rango y cacerías de manada.</li>
+              <li>Aura de velocidad, fuerza herida y caída resistente.</li>
+            </ul>
+            <p class="faction-whisper">“La luna no manda. Recuerda.”</p>
+          </div>
+        </article>
+        <article class="faction-card reveal">
+          <div class="faction-art"><img src="assets/hunter.svg" alt="Torre de vigilancia con farol al amanecer."></div>
+          <div class="faction-body">
+            <p class="faction-index">03 · La vigilia como deber</p>
+            <h3>Cazadores</h3>
+            <p>Miran lo que otros prefieren no ver. Su fuerza está en la preparación, la resistencia y no llegar solos.</p>
+            <ul>
+              <li>Sellos de detección y aura de resistencia.</li>
+              <li>Contratos, investigación y presencia en el mundo.</li>
+            </ul>
+            <p class="faction-whisper">“Alguien tiene que quedarse despierto.”</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="lore section" id="mundo">
+      <div class="lore-copy reveal">
+        <p class="kicker">El mundo</p>
+        <h2>La noche no es el final del día.<br>Es su otra cara.</h2>
+        <p>Cuando la última luz del alba se apaga, el valle cambia de dueño. Los pactos antiguos se despiertan, las caravanas buscan refugio y las criaturas que la gente llama leyenda empiezan a tomar decisiones.</p>
+        <p>No hay un bando inocente. Los vampiros necesitan sangre para no perderse a sí mismos. Los hombres lobo necesitan espacio para una parte de ellos que no cabe en una casa. Los cazadores necesitan respuestas para un mundo que se niega a quedarse quieto.</p>
+        <p>En SanguinarisMC, esas necesidades se cruzan. Una caravana desaparece. Un rumor llega a la Vigilia. Una tormenta que no debía existir cubre el cielo. Las facciones recuerdan, y lo que recuerdan cambia la forma en que se tratan.</p>
+      </div>
+      <div class="lore-aside reveal">
+        <blockquote>“El mundo no está en guerra porque alguien lo decidiera. Está en tensión porque todos tienen algo que perder.”</blockquote>
+        <ul class="truths">
+          <li><span>01</span><div><strong>La sangre recuerda.</strong><p>Lo que haces con tu hambre deja una huella que otros pueden encontrar.</p></div></li>
+          <li><span>02</span><div><strong>La luna escucha.</strong><p>El clima y la noche no son decorado: inclinan la balanza de quienes saben leerlos.</p></div></li>
+          <li><span>03</span><div><strong>La vigilia no duerme.</strong><p>Ninguna facción puede permitirse ser la única que mira hacia otro lado.</p></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="features section" id="avance">
+      <div class="section-head reveal">
+        <p class="kicker">Lo que ya respira</p>
+        <h2>Una base jugable.<br>No una promesa vacía.</h2>
+        <p class="section-sub">Estas piezas ya fueron probadas en un servidor interno. No son la lista completa del lanzamiento ni una fecha encubierta: son el terreno sobre el que seguimos construyendo.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature reveal"><span class="feature-num">01</span><h3>Contratos con carácter</h3><p>Los NPCs no son adornos: ofrecen encargos, pagan Marcas y recuerdan quién cumple. Cazar, recolectar, entregar o llegar a un destino.</p></article>
+        <article class="feature reveal"><span class="feature-num">02</span><h3>Refugios que importan</h3><p>Un núcleo, un territorio y un grupo. Los refugios se reclaman, se mejoran y se protegen. No son solo un lugar para volver.</p></article>
+        <article class="feature reveal"><span class="feature-num">03</span><h3>NPCs con rutina</h3><p>Comerciantes, guardias y exploradores nativos con horarios, diálogos, comercio y memoria. El mundo sigue vivo cuando no estás mirando.</p></article>
+        <article class="feature reveal"><span class="feature-num">04</span><h3>Un clima con memoria</h3><p>La tormenta no llega por azar. El clima cambia con los eventos y con la facción que más presencia tiene en el mundo.</p></article>
+        <article class="feature reveal"><span class="feature-num">05</span><h3>Política entre facciones</h3><p>Siete estados diplomáticos, desde la neutralidad hasta la guerra. Los incidentes pueden tensar relaciones, y la guerra abre asedios territoriales.</p></article>
+        <article class="feature reveal"><span class="feature-num">06</span><h3>Habilidades y build</h3><p>Habilidades activas, pasivas, mejoras por rango, prestigio y una lectura de tu build según el equipo que llevas puesto.</p></article>
+      </div>
+      <p class="fine-print reveal">Probado en servidor de pruebas. El equilibrio, la escala y la experiencia pública siguen en desarrollo.</p>
+    </section>
+
+    <section class="patch section" id="novedades">
+      <div class="section-head reveal">
+        <p class="kicker">Notas del parche</p>
+        <h2>La noche cambió.<br>Esto es lo que hay de nuevo.</h2>
+        <p class="section-sub">Registro de las iteraciones internas. Elige una versión en la pestaña o ciérrala cuando ya la hayas leído: lo que se añadió, lo que se ajustó y lo que se corrigió, sin detalles internos.</p>
+      </div>
+      <div class="patch-panel" id="patch-panel" data-current="0.10.0">
+        <div class="patch-bar">
+          <p class="patch-bar-title">Notas del parche <span class="patch-current">0.10.0</span></p>
+          <div class="patch-tabs" role="tablist" aria-label="Versiones del parche">
+            <button class="patch-tab" type="button" role="tab" id="tab-0-10-0" aria-controls="panel-0-10-0" aria-selected="true">0.10.0</button>
+            <button class="patch-tab" type="button" role="tab" id="tab-0-8-0" aria-controls="panel-0-8-0" aria-selected="false" tabindex="-1">0.8.0</button>
+            <button class="patch-tab" type="button" role="tab" id="tab-0-7-0" aria-controls="panel-0-7-0" aria-selected="false" tabindex="-1">0.7.0</button>
+            <button class="patch-tab" type="button" role="tab" id="tab-0-6-0" aria-controls="panel-0-6-0" aria-selected="false" tabindex="-1">0.6.0</button>
+            <button class="patch-tab" type="button" role="tab" id="tab-0-5-0" aria-controls="panel-0-5-0" aria-selected="false" tabindex="-1">0.5.0</button>
+            <button class="patch-tab" type="button" role="tab" id="tab-0-4-0" aria-controls="panel-0-4-0" aria-selected="false" tabindex="-1">0.4.0</button>
+            <button class="patch-tab" type="button" role="tab" id="tab-0-3-0" aria-controls="panel-0-3-0" aria-selected="false" tabindex="-1">0.3.0</button>
+            <button class="patch-tab" type="button" role="tab" id="tab-0-2-0" aria-controls="panel-0-2-0" aria-selected="false" tabindex="-1">0.2.0</button>
+            <button class="patch-tab" type="button" role="tab" id="tab-0-1-0" aria-controls="panel-0-1-0" aria-selected="false" tabindex="-1">0.1.0</button>
+          </div>
+          <button class="patch-toggle" type="button" aria-expanded="true" aria-controls="patch-body">
+            <span class="patch-toggle-label">Ocultar notas</span>
+          </button>
+        </div>
+        <div class="patch-body" id="patch-body">
+
+      <article class="patch-card" role="tabpanel" id="panel-0-10-0" aria-labelledby="tab-0-10-0" tabindex="0">
+        <header class="patch-head">
+          <div>
+            <p class="patch-version">Parche interno 0.10.0</p>
+            <h3>La Vigilia también protege</h3>
+          </div>
+          <p class="patch-date">2 de noviembre de 2026<br>Servidor de pruebas</p>
+        </header>
+        <div class="patch-grid">
+          <section class="patch-col patch-added">
+            <h4><span>Añadido</span></h4>
+            <ul>
+              <li><strong>Los refugios ahora se alimentan.</strong> Cada facción transforma sus materiales en esencias; seis esencias pueden condensarse en una Esencia Sanguinaris.</li>
+              <li><strong>La protección tiene capacidad y duración.</strong> El nivel del territorio define cuánto combustible admite. El menú muestra su estado y permite abastecerlo; sin esencia, la protección queda inactiva.</li>
+              <li><strong>Una guía para dar los primeros pasos.</strong> Los tutoriales acompañan la primera noche y enseñan a reclamar territorio, abrir sus menús y acercarse a los nodos.</li>
+              <li><strong>La noche se siente más cerca.</strong> Un latido acompaña la salud crítica y las muertes importantes reciben líneas propias y un título al reaparecer.</li>
+            </ul>
+          </section>
+          <section class="patch-col patch-changed">
+            <h4><span>Cambiado</span></h4>
+            <ul>
+              <li><strong>Un refugio nuevo no nace protegido para siempre.</strong> Hay que mantenerlo con esencias, y su combustible se consume con el tiempo.</li>
+              <li><strong>Las recetas dejan algo a cambio.</strong> La materia prima recuperada acompaña la creación de esencias para que abastecer el núcleo forme parte de la economía de cada facción.</li>
+            </ul>
+          </section>
+          <section class="patch-col patch-fixed">
+            <h4><span>Corregido</span></h4>
+            <ul>
+              <li><strong>Las mesas vacías ya no rompen la preparación de recetas.</strong> La matriz de crafteo admite espacios vacíos y el resultado se puede verificar en la mesa.</li>
+              <li><strong>Las muertes cuentan lo que pasó.</strong> El mensaje propio sustituye al texto genérico y se conserva al reaparecer.</li>
+            </ul>
+          </section>
+        </div>
+        <div class="patch-tags">
+          <span>Esencias de facción</span><span>Protección territorial</span><span>Tutoriales guiados</span><span>Latido crítico</span>
+        </div>
+        <p class="patch-note">Versión interna para pruebas en Purpur 1.21.4. El servidor aún no está abierto al público y el equilibrio puede cambiar.</p>
+      </article>
+
+      <article class="patch-card" role="tabpanel" id="panel-0-8-0" aria-labelledby="tab-0-8-0" tabindex="0">
+        <header class="patch-head">
+          <div>
+            <p class="patch-version">Parche interno 0.8.0</p>
+            <h3>El taller de las facciones</h3>
+          </div>
+          <p class="patch-date">2 de noviembre de 2026<br>Servidor de pruebas</p>
+        </header>
+        <div class="patch-grid">
+          <section class="patch-col patch-added">
+            <h4><span>Añadido</span></h4>
+            <ul>
+              <li><strong>El catálogo crece.</strong> Ahora hay sesenta y cinco piezas forjables: tres familias de arma por facción, ocho piezas de armadura y nueve reliquias. El menú separa Armas, Armadura y Reliquias para que nadie se pierda entre páginas.</li>
+              <li><strong>Cada facción elige su filo.</strong> Los vampiros forjan filo, dagas gemelas y guadaña; los hombres lobo, hacha de jauría, garras y maza; los cazadores, arco largo, ballesta y estaca; los brujos, daga ritual, cetro y hoz. No son nombres distintos sobre el mismo golpe: cambian alcance, ritmo y forma de pelear.</li>
+              <li><strong>Mecánicas propias.</strong> Las piezas Mayores ya no se limitan a encantamientos. Sangrado que sigue manando, robo de vida, ejecución sobre heridos, tajos en área, marcas de caza, maldiciones devueltas, espinas, escudos de sangre y guardias rituales entran al combate. Son dieciocho formas de pelear, repartidas según la identidad de cada facción.</li>
+              <li><strong>Auras sobre la pieza.</strong> Las armas y armaduras Mayores llevan su propia aura de partículas: una forma, un color y una segunda partícula propios de la facción. El aura envuelve el filo o la armadura, nunca al jugador, y se aviva al mejorar la pieza.</li>
+              <li><strong>Sets de cuatro piezas.</strong> Corte Carmesí, Piel de la Manada, Vigilia de Acero y Umbral Ritual. Reunir las cuatro piezas de un set concede su bono. El menú muestra cuánto llevas y qué te falta.</li>
+              <li><strong>Reliquias de manada.</strong> Los hombres lobo pueden llevar un amuleto y un collar al mismo tiempo, cada uno en su ranura, y sus efectos solo despiertan transformados. Hay tres collares y tres amuletos para elegir; el menú muestra el que llevas y lo retira con un clic.</li>
+            </ul>
+          </section>
+          <section class="patch-col patch-changed">
+            <h4><span>Cambiado</span></h4>
+            <ul>
+              <li><strong>Menor y Mayor tienen papeles distintos.</strong> La Menor enseña el camino: atributos limpios y nada más. La Mayor cambia las reglas: gana mecánicas propias y aura. Los vampiros que quieran jugar sin efectos especiales siguen teniendo piezas Menores completas.</li>
+              <li><strong>El taller se ordena por categorías.</strong> La forja dejó de ser una sola pared de botones: ahora se entra por Armas, Armadura o Reliquias, y cada lista muestra coste, rango, set y ranura antes de forjar.</li>
+              <li><strong>Mejorar una pieza la cambia de verdad.</strong> El nivel de forja ya no solo sube atributos y encantamientos: también intensifica las mecánicas y aviva el aura de las piezas Mayores.</li>
+              <li><strong>La forja guarda memoria.</strong> Quien ya tenía piezas del catálogo anterior las conserva: el taller reconoce los nombres viejos y los traduce al nuevo sin pedir nada a cambio.</li>
+            </ul>
+          </section>
+          <section class="patch-col patch-fixed">
+            <h4><span>Corregido</span></h4>
+            <ul>
+              <li><strong>Un amuleto y un collar, no dos de cada.</strong> Las reliquias de manada ocupan su ranura de verdad: si ya llevas una, la segunda espera en el inventario.</li>
+              <li><strong>Las piezas de pecho renombradas</strong> siguen reconociéndose al cargar el servidor, con su nivel de forja y sus efectos intactos.</li>
+              <li><strong>El menú de reliquias</strong> distingue una ranura vacía de una ocupada y permite retirar la pieza sin pasar por comandos.</li>
+            </ul>
+          </section>
+        </div>
+        <div class="patch-tags">
+          <span>65 piezas</span><span>Familias de arma</span><span>Mecánicas propias</span><span>Auras de facción</span><span>Sets de 4 piezas</span><span>Reliquias de manada</span>
+        </div>
+        <p class="patch-note">Sigue sin haber acceso público ni fecha de lanzamiento. Todo esto se probó en un servidor interno; el equilibrio puede cambiar.</p>
+      </article>
+
+      <article class="patch-card" role="tabpanel" id="panel-0-7-0" aria-labelledby="tab-0-7-0" tabindex="0" hidden>
+        <header class="patch-head">
+          <div>
+            <p class="patch-version">Parche interno 0.7.0</p>
+            <h3>La sangre manda</h3>
+          </div>
+          <p class="patch-date">2 de noviembre de 2026<br>Servidor de pruebas</p>
+        </header>
+        <div class="patch-grid">
+          <section class="patch-col patch-added">
+            <h4><span>Añadido</span></h4>
+            <ul>
+              <li><strong>Botellas de sangre.</strong> Golpear o matar deja sangre embotellada. Cada botella guarda hasta diecinueve unidades y, al beberla, sacia a un vampiro como ninguna comida puede hacerlo.</li>
+              <li><strong>Sangre con memoria.</strong> La sangre arrancada a un jugador recuerda de dónde viene: beberla concede Fuerza, Velocidad y un don extra según la build de quien la derramó. Cuanta más sangre lleva la botella, más dura el efecto.</li>
+              <li><strong>Ofrenda de sangre.</strong> Con <em>/sang v ofrecer</em> un mortal entrega entre una y diecinueve unidades a un vampiro cercano a cambio de su propia vida. Un vampiro también puede ofrecer de su reserva. Nadie da más de lo que tiene ni más de lo que el otro puede recibir.</li>
+              <li><strong>Jefes de patrulla.</strong> Siete amenazas despiertan de una en una: la oveja carmesí, el coloso de asedio, el corazón de brasas, la bruja del pantano, la tejedora, el invocador de la vigilia y el verdugo. Cada una pelea distinto, anuncia su llegada y premia al mayor daño.</li>
+              <li><strong>Música de cacería.</strong> Cuando un jefe despierta, Pigstep suena solo para quienes lo enfrentan. Aléjate y la música se apaga: el resto del servidor no la escucha.</li>
+              <li><strong>Voces del encuentro.</strong> Los enemigos de facción ya hablan durante el combate, solo con los suyos que están cerca y sin repetir la misma frase una y otra vez.</li>
+            </ul>
+          </section>
+          <section class="patch-col patch-changed">
+            <h4><span>Cambiado</span></h4>
+            <ul>
+              <li><strong>El hambre ya no es igual para todos.</strong> Los hombres lobo solo comen carne cruda, y esta alimenta más que la cocinada; la carne podrida les llena sin envenenarlos. El resto de facciones come como siempre.</li>
+              <li><strong>Los vampiros pueden probar la comida,</strong> pero ya no les llena: su barra solo sube con sangre. Comer deja de ser una forma de sobrevivir y pasa a ser un gesto.</li>
+              <li><strong>La sangre es recurso de combate,</strong> no moneda: no se compra ni se vende, se derrama, se transporta y se comparte.</li>
+              <li><strong>La Masquerade respeta a los suyos.</strong> Los vampiros enmascarados ya no atacan a otros vampiros de su misma facción.</li>
+            </ul>
+          </section>
+          <section class="patch-col patch-fixed">
+            <h4><span>Corregido</span></h4>
+            <ul>
+              <li><strong>El estado de la patrulla</strong> se lee entero, sin avisos rotos ni texto a medio formar.</li>
+              <li><strong>Los avisos de ofrenda</strong> muestran la cantidad exacta y el motivo cuando no se puede entregar.</li>
+              <li><strong>La espera tras vencer a un jefe</strong> vuelve a ser de una hora completa, como corresponde a una amenaza de ese tamaño.</li>
+            </ul>
+          </section>
+        </div>
+        <div class="patch-tags">
+          <span>Botellas de sangre</span><span>Ofrenda</span><span>Sangre con build</span><span>Comida por facción</span><span>Jefes de patrulla</span><span>Pigstep de cacería</span><span>Masquerade</span>
+        </div>
+        <p class="patch-note">Sigue sin haber acceso público ni fecha de lanzamiento. Todo esto se probó en un servidor interno; el equilibrio puede cambiar.</p>
+      </article>
+
+      <article class="patch-card" role="tabpanel" id="panel-0-6-0" aria-labelledby="tab-0-6-0" tabindex="0" hidden>
+        <header class="patch-head">
+          <div>
+            <p class="patch-version">Parche interno 0.6.0</p>
+            <h3>La noche aprende tus pasos</h3>
+          </div>
+          <p class="patch-date">2 de noviembre de 2026<br>Servidor de pruebas</p>
+        </header>
+        <div class="patch-grid">
+          <section class="patch-col patch-added">
+            <h4><span>Añadido</span></h4>
+            <ul>
+              <li><strong>La Primera Noche.</strong> Un recibimiento de cinco pasos para quien entra por primera vez: elegir facción, abrir la brújula, aceptar un contrato, lanzar una habilidad y cobrarlo. Cada paso llega con su pista, y completarlo paga una recompensa única.</li>
+              <li><strong>Brújula de Sanguinaris.</strong> Una brújula personal que aparece en tu inventario y abre un menú con todos los caminos del servidor. Ya no hace falta memorizar comandos para encontrar nada.</li>
+              <li><strong>Mapa de Sanguinaris.</strong> Un mapa propio con cinco niveles de mejora que dibuja territorios, nodos, NPCs y jugadores. Cuanto más lo mejoras, más claro ves dónde estás y quién manda alrededor.</li>
+              <li><strong>Marcador lateral.</strong> Facción, rango, Marcas y objetivos a un golpe de vista, con opción de ocultarlo o mostrarlo cuando quieras. Se guarda por jugador.</li>
+              <li><strong>Pestaña de jugadores temática.</strong> Ahora se llama SanguinarisMC, con la cabeza de cada jugador, su apodo, su rango y la inicial de su facción: V, L, C o B.</li>
+              <li><strong>Mesas de facción en el mundo.</strong> Mesas de forja, mercado y contratos con la estética de cada camino. Se colocan en el mundo, brillan con la marca de la facción y se abren con un clic derecho, sin pasar por comandos.</li>
+              <li><strong>Recolección de hierbas, flores y hongos.</strong> La vegetación salvaje ya no es solo paisaje: al cortarla puede dejar hierbas propias de cada facción. Cuatro hierbas se destilan en una esencia, y esa esencia alimenta la forja.</li>
+              <li><strong>Mejoras de forja.</strong> Una pieza forjada ya no es final para siempre: puede subir hasta nivel tres pagando Marcas y esencias, ganando atributos y reforzando sus encantamientos.</li>
+            </ul>
+          </section>
+          <section class="patch-col patch-changed">
+            <h4><span>Cambiado</span></h4>
+            <ul>
+              <li><strong>La economía respira.</strong> Los contratos tienen un techo diario de quince cobros, los nodos capturados vuelven a neutral con el tiempo y la regeneración de recurso tiene un tope. Nada de esto castiga el juego normal: cierra los atajos que rompían la partida de los demás.</li>
+              <li><strong>Los contratos de caza</strong> ya no se generan en servidores con poca gente si no hay a quién enfrentar. En poblaciones pequeñas aparecen encargos que sí se pueden cumplir.</li>
+              <li><strong>Los familiares</strong> ahora buscan comida con un tiempo de espera y un golpe de suerte, en lugar de repetirlo sin fin. Tampoco reciben daño de su propio dueño y defienden como corresponde.</li>
+              <li><strong>La forja</strong> gana un motivo para volver a ella: mejorar lo que ya tienes, en vez de acumular piezas que nadie usa.</li>
+            </ul>
+          </section>
+          <section class="patch-col patch-fixed">
+            <h4><span>Corregido</span></h4>
+            <ul>
+              <li><strong>Las habilidades de primer nivel</strong> vuelven a estar disponibles desde el inicio, como debían: nadie empieza con la mano vacía.</li>
+              <li><strong>Las pistas de la Primera Noche</strong> se leen completas, sin avisos rotos ni texto de relleno.</li>
+              <li><strong>Los avisos de las mesas y del marcador</strong> ya no repiten palabras ni dejan mensajes a medio formar.</li>
+              <li><strong>La recolección de hierbas</strong> entrega el objeto y su aviso en el mismo momento, sin dejar recolecciones fantasma.</li>
+            </ul>
+          </section>
+        </div>
+        <div class="patch-tags">
+          <span>Primera Noche</span><span>Brújula-menú</span><span>Mapa mejorable</span><span>Marcador lateral</span><span>Mesas de facción</span><span>Hierbas y esencias</span><span>Forja nivel 3</span>
+        </div>
+        <p class="patch-note">Sigue sin haber acceso público ni fecha de lanzamiento. Esto es un registro de desarrollo, no una promesa de apertura.</p>
+      </article>
+
+      <article class="patch-card" role="tabpanel" id="panel-0-5-0" aria-labelledby="tab-0-5-0" tabindex="0" hidden>
+        <header class="patch-head">
+          <div>
+            <p class="patch-version">Parche interno 0.5.0</p>
+            <h3>La forja de tu facción</h3>
+          </div>
+          <p class="patch-date">1 de noviembre de 2026<br>Servidor de pruebas</p>
+        </header>
+        <div class="patch-grid">
+          <section class="patch-col patch-added">
+            <h4><span>Añadido</span></h4>
+            <ul>
+              <li><strong>Forja de facción.</strong> Un taller nuevo, con cinco piezas por camino: arma menor, arma mayor, armadura menor, armadura mayor y una reliquia. Vampiros, hombres lobo, cazadores y brujos tienen su propio acero, su propio estilo y sus propios materiales.</li>
+              <li><strong>Esencias de facción.</strong> Un material propio de cada camino que se obtiene jugando: contratos, subidas de ruta, jefes, grietas y captura de nodos. Solo sirve a su facción.</li>
+              <li><strong>Reliquias con uso activo.</strong> Cada facción tiene una pieza que se activa con clic derecho, con su efecto y su recarga. No es un adorno: entra en el combate o en la exploración cuando la necesitas.</li>
+              <li><strong>Estilos de forja.</strong> Las piezas forjadas tienen una afinidad reconocible —defensa, control, agresión— que también cuenta para la lectura de tu conjunto.</li>
+            </ul>
+          </section>
+          <section class="patch-col patch-changed">
+            <h4><span>Cambiado</span></h4>
+            <ul>
+              <li><strong>Sin niveles.</strong> La forja no sube de nivel ni bloquea piezas para siempre: se elige una calidad. La Mayor no es mejor en todo, gana una cosa y cede otra a cambio.</li>
+              <li><strong>Coste a la vista.</strong> Antes de forjar ves Marcas, esencias y materiales, con lo que tienes y lo que te falta de cada cosa.</li>
+              <li><strong>El equipo vanilla sigue siendo válido.</strong> La forja es una alternativa con carácter, no un requisito para competir.</li>
+              <li><strong>Los contratos</strong> ahora entregan una esencia de tu facción al reclamarlos, sea cual sea el tipo de encargo.</li>
+            </ul>
+          </section>
+          <section class="patch-col patch-fixed">
+            <h4><span>Corregido</span></h4>
+            <ul>
+              <li><strong>Las entregas de contrato</strong> ya no pueden cobrar los materiales dos veces ni dejarte sin ellos al reclamar.</li>
+              <li><strong>Los contratos de recolección</strong> ahora cuentan lo que de verdad recoges al romper bloques y al derrotar criaturas: huesos, hilo, redstone, bayas y demás, en lugar del bloque en sí.</li>
+              <li><strong>Los bonus del arma forjada</strong> se aplican al empuñarla en la mano principal, no a una ranura equivocada.</li>
+            </ul>
+          </section>
+        </div>
+        <div class="patch-tags">
+          <span>5 piezas por facción</span><span>Esencias</span><span>Sin niveles</span><span>Reliquias activas</span><span>Equipo opcional</span>
+        </div>
+        <p class="patch-note">Sigue sin haber acceso público ni fecha de lanzamiento. Esto es un registro de desarrollo, no una promesa de apertura.</p>
+      </article>
+
+      <article class="patch-card" role="tabpanel" id="panel-0-4-0" aria-labelledby="tab-0-4-0" tabindex="0" hidden>
+        <header class="patch-head">
+          <div>
+            <p class="patch-version">Parche interno 0.4.0</p>
+            <h3>Tiradas de la Noche</h3>
+          </div>
+          <p class="patch-date">1 de noviembre de 2026<br>Servidor de pruebas</p>
+        </header>
+        <div class="patch-grid">
+          <section class="patch-col patch-added">
+            <h4><span>Añadido</span></h4>
+            <ul>
+              <li><strong>Tiradas de la Noche.</strong> Un gacha semanal que se paga con diamantes del inventario, no con Marcas. Tres tiradas por semana natural y tres diamantes por tirada: un lujo, no una obligación.</li>
+              <li><strong>Cada tirada entrega algo.</strong> No existen tiradas vacías: Marcas, diamantes, piedras rituales, netherita, libros encantados, armas, tótems o un consumible propio de tu facción.</li>
+              <li><strong>Reliquias del mes.</strong> El premio gordo rota cada mes entre el <em>Mazo del Crepúsculo</em>, con Reparación y Densidad, y las <em>Alas del Alba</em>, una elytra con Reparación. Verlo en el chat ya es un acontecimiento.</li>
+              <li><strong>Fortuna acumulada.</strong> Las rachas malas no son eternas: cada cierta cantidad de tiradas sin premio alto, la siguiente sube de rango como mínimo.</li>
+              <li><strong>Historial de fortuna.</strong> La pantalla guarda tus últimas tiradas para que puedas presumir de la buena racha —o culpar a la mala.</li>
+            </ul>
+          </section>
+          <section class="patch-col patch-changed">
+            <h4><span>Cambiado</span></h4>
+            <ul>
+              <li><strong>Los rangos de premio</strong> se leen de un vistazo: común, medio, alto y gordo, con sus probabilidades a la vista antes de gastar el primer diamante.</li>
+              <li><strong>La semana empieza en lunes</strong> a medianoche UTC. Lo que no gastes no se acumula: la noche no negocia.</li>
+              <li><strong>El premio del mes</strong> se muestra en la pantalla con su nombre, su encantamiento y el mes al que pertenece.</li>
+            </ul>
+          </section>
+          <section class="patch-col patch-fixed">
+            <h4><span>Corregido</span></h4>
+            <ul>
+              <li><strong>Las tiradas usadas</strong> ya no dependen de la memoria del servidor: un reinicio no devuelve tiradas ni borra la fortuna acumulada.</li>
+              <li><strong>Un clic de más</strong> no puede cobrar dos veces: si no quedan tiradas, la pantalla lo dice y no toca tus diamantes.</li>
+              <li><strong>Los premios de facción</strong> entregan el objeto correcto para tu camino, no una versión genérica.</li>
+            </ul>
+          </section>
+        </div>
+        <div class="patch-tags">
+          <span>3 tiradas por semana</span><span>3 diamantes por tirada</span><span>Premio gordo mensual</span><span>Fortuna acumulada</span>
+        </div>
+        <p class="patch-note">Sigue sin haber acceso público ni fecha de lanzamiento. Esto es un registro de desarrollo, no una promesa de apertura.</p>
+      </article>
+
+      <article class="patch-card" role="tabpanel" id="panel-0-3-0" aria-labelledby="tab-0-3-0" tabindex="0" hidden>
+        <header class="patch-head">
+          <div>
+            <p class="patch-version">Parche interno 0.3.0</p>
+            <h3>El peso de tu build</h3>
+          </div>
+          <p class="patch-date">1 de noviembre de 2026<br>Servidor de pruebas</p>
+        </header>
+        <div class="patch-grid">
+          <section class="patch-col patch-added">
+            <h4><span>Añadido</span></h4>
+            <ul>
+              <li><strong>Bonos de build con afinidad.</strong> Un conjunto coherente ya no es solo un nombre: al completar armadura y arma la afinidad sube de I a IV y entrega armadura, filo, vida o velocidad según hacia dónde empujes la build. Cuando asciende, recibes el aviso en el chat.</li>
+              <li><strong>Sinergia de dos estilos.</strong> A partir de la afinidad II, el segundo estilo aporta la mitad de su bonificación. Mezclar deja de ser una moda y pasa a ser una decisión.</li>
+              <li><strong>Estadísticas secundarias.</strong> La pantalla de build separa lo que llevas puesto de lo que estás construyendo: poder de build, afinidad, niveles de habilidades y de rutas, y apoyo invertido.</li>
+              <li><strong>Puntos de apoyo.</strong> Una ayuda pequeña para tapar carencias: hasta seis puntos en total y un máximo de tres por estadística. Se ganan subiendo rutas, se devuelven con clic derecho y se redistribuyen con un reinicio.</li>
+            </ul>
+          </section>
+          <section class="patch-col patch-changed">
+            <h4><span>Cambiado</span></h4>
+            <ul>
+              <li><strong>La lectura de la build</strong> distingue estadísticas primarias y secundarias, con el efecto exacto de cada punto antes de gastarlo.</li>
+              <li><strong>El bono crece contigo:</strong> subir habilidades y rutas sube el poder de build, y con él la afinidad y su bonificación.</li>
+              <li><strong>El reparto de apoyo es reversible.</strong> Equivocarse deja de ser definitivo: puedes devolver un punto o reiniciar el reparto entero.</li>
+            </ul>
+          </section>
+          <section class="patch-col patch-fixed">
+            <h4><span>Corregido</span></h4>
+            <ul>
+              <li><strong>Las instalaciones existentes</strong> reciben las opciones nuevas de bonos y apoyo sin perder sus ajustes previos ni sus comentarios.</li>
+              <li><strong>Los atributos de apoyo</strong> se vuelven a aplicar al entrar, aunque el servidor se haya reiniciado entre medio.</li>
+              <li><strong>El reparto de apoyo</strong> ya no permite pasar del límite por estadística ni del total disponible.</li>
+            </ul>
+          </section>
+        </div>
+        <div class="patch-tags">
+          <span>Afinidad I–IV</span><span>Sinergia de dos estilos</span><span>3 puntos por estadística</span><span>6 puntos de apoyo</span>
+        </div>
+        <p class="patch-note">Sigue sin haber acceso público ni fecha de lanzamiento. Esto es un registro de desarrollo, no una promesa de apertura.</p>
+      </article>
+
+      <article class="patch-card" role="tabpanel" id="panel-0-2-0" aria-labelledby="tab-0-2-0" tabindex="0" hidden>
+        <header class="patch-head">
+          <div>
+            <p class="patch-version">Parche interno 0.2.0</p>
+            <h3>La noche trabaja</h3>
+          </div>
+          <p class="patch-date">1 de noviembre de 2026<br>Servidor de pruebas</p>
+        </header>
+        <div class="patch-grid">
+          <section class="patch-col patch-added">
+            <h4><span>Añadido</span></h4>
+            <ul>
+              <li><strong>Rutas de oficio.</strong> Minería, recolección, caza y otras profesiones suben de nivel con lo que haces, pagan Marcas y alimentan después los puntos de apoyo.</li>
+              <li><strong>Nodos territoriales.</strong> Puntos de interés que se capturan, dan beneficios a su dueño y quedan protegidos para quien no tiene permiso.</li>
+              <li><strong>Doble arma con golpe potenciado.</strong> Empuñar dos armas suma su daño, y el golpe potenciado es el único que aplica debilidad y lentitud, con un enfriamiento largo.</li>
+              <li><strong>Recompensas de mercenario con garantía.</strong> El pago queda retenido hasta completar el encargo y se reembolsa si se cancela.</li>
+            </ul>
+          </section>
+          <section class="patch-col patch-changed">
+            <h4><span>Cambiado</span></h4>
+            <ul>
+              <li><strong>La economía se revisó entera:</strong> compra, venta, sueldos y recompensas ahora respiran con la reputación y el esfuerzo real.</li>
+              <li><strong>Los NPCs</strong> dejaron de lanzar frases al pasar si no interactúas con ellos.</li>
+              <li><strong>El clima</strong> anuncia cada cambio una sola vez, aunque el estado salte dos veces seguidas.</li>
+            </ul>
+          </section>
+          <section class="patch-col patch-fixed">
+            <h4><span>Corregido</span></h4>
+            <ul>
+              <li><strong>El spam de anuncios de clima</strong> al encadenar tormenta, lluvia y despejado.</li>
+              <li><strong>El doble arma</strong> ya no penaliza cada golpe: la penalización vive solo en el golpe potenciado.</li>
+              <li><strong>La recompensa de mercenario</strong> ya no se pierde si el encargo se cancela antes de empezar.</li>
+            </ul>
+          </section>
+        </div>
+        <div class="patch-tags">
+          <span>Rutas de oficio</span><span>Nodos territoriales</span><span>Doble arma</span><span>Recompensas con garantía</span>
+        </div>
+        <p class="patch-note">Sigue sin haber acceso público ni fecha de lanzamiento. Esto es un registro de desarrollo, no una promesa de apertura.</p>
+      </article>
+
+      <article class="patch-card" role="tabpanel" id="panel-0-1-0" aria-labelledby="tab-0-1-0" tabindex="0" hidden>
+        <header class="patch-head">
+          <div>
+            <p class="patch-version">Parche interno 0.1.0</p>
+            <h3>Sendero de la Noche</h3>
+          </div>
+          <p class="patch-date">1 de noviembre de 2026<br>Servidor de pruebas</p>
+        </header>
+        <div class="patch-grid">
+          <section class="patch-col patch-added">
+            <h4><span>Añadido</span></h4>
+            <ul>
+              <li><strong>Mercado rotativo completo.</strong> Nueve categorías —armas, armaduras, libros, pociones, minerales, reliquias, discos, cuernos y trueques— renuevan su selección cada dos horas. Todos ven la misma oferta, con piezas exclusivas de facción y límites de compra por jugador.</li>
+              <li><strong>Skins en rotación.</strong> Cinco apariencias cambian por ciclo, con tienda propia y compra directa desde el menú.</li>
+              <li><strong>Chats separados.</strong> Facción, grupo y subalianza tienen canal propio, cada uno con su formato y sus atajos. La subalianza llega desactivada: está pensada para servidores con varios grupos.</li>
+              <li><strong>Sendero de progresión.</strong> Una pantalla de camino serpenteante que reúne rangos, prestigio y desbloqueos por páginas, en lugar de listas sueltas.</li>
+              <li><strong>Más variedad de build.</strong> 84 habilidades repartidas en seis rangos, con alternativas por rango y cinco espacios de loadout.</li>
+              <li><strong>Posición fija de NPCs.</strong> Un NPC puede anclarse a un punto concreto y conservar esa ubicación entre reinicios, con su rutina ajustada al nuevo hogar.</li>
+            </ul>
+          </section>
+          <section class="patch-col patch-changed">
+            <h4><span>Cambiado</span></h4>
+            <ul>
+              <li><strong>El árbol de habilidades ya no entrega todo seguido.</strong> Ahora eliges alternativas y ramas; lo que descartas cambia tu build y tu forma de jugar.</li>
+              <li><strong>El nombre de tu build</strong> se calcula con el equipo puesto y las habilidades realmente equipadas.</li>
+              <li><strong>Pantallas renovadas.</strong> Habilidades, pasivas, facción y linaje, build, mercado y skins se rediseñaron con una estética más cercana a un menú de mod.</li>
+              <li><strong>Los mercaderes tienen catálogo rotativo real.</strong> Ya no solo hay skins: también armas, armaduras, consumibles y reliquias.</li>
+              <li><strong>Los NPCs reubicados</strong> usan su nueva posición como hogar para sus rutinas.</li>
+              <li><strong>Los canales y sus formatos</strong> se activan o desactivan en caliente, sin reiniciar el servidor.</li>
+            </ul>
+          </section>
+          <section class="patch-col patch-fixed">
+            <h4><span>Corregido</span></h4>
+            <ul>
+              <li><strong>NPCs que reaparecían una y otra vez en el mismo punto</strong> aunque se cambiara su ubicación.</li>
+              <li><strong>Faltaban categorías en las tiendas rotativas:</strong> solo existían las de skins.</li>
+              <li><strong>El chat no separaba facción, grupo y subalianza.</strong></li>
+              <li><strong>Las instalaciones con la lista antigua de habilidades</strong> se actualizan solas y guardan una copia de la anterior.</li>
+              <li><strong>Los textos nuevos</strong> se añaden automáticamente a las instalaciones existentes.</li>
+              <li><strong>La compra de skins</strong> ya no muestra un error equivocado cuando el problema era saldo o propiedad.</li>
+            </ul>
+          </section>
+        </div>
+        <div class="patch-tags">
+          <span>84 habilidades</span><span>9 categorías rotativas</span><span>5 espacios de build</span><span>3 canales de chat</span><span>Subalianzas opcionales</span>
+        </div>
+        <p class="patch-note">Sigue sin haber acceso público ni fecha de lanzamiento. Esto es un registro de desarrollo, no una promesa de apertura.</p>
+      </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="diary section" id="diario">
+      <div class="section-head reveal">
+        <p class="kicker">Diario de desarrollo</p>
+        <h2>Lo que ya está hecho<br>y lo que viene después.</h2>
+      </div>
+      <ol class="timeline">
+        <li class="reveal"><span class="timeline-dot"></span><div><p class="timeline-status">Base</p><h3>El esqueleto del mundo</h3><p>Facciones, recursos, habilidades, refugios, contratos, tiendas y eventos funcionando en pruebas internas.</p></div></li>
+        <li class="reveal"><span class="timeline-dot"></span><div><p class="timeline-status">Mundo vivo</p><h3>Alguien más está despierto</h3><p>NPCs nativos con rutinas, diálogo, comercio y contratos. Objetos exclusivos que no se consiguen en vanilla.</p></div></li>
+        <li class="reveal"><span class="timeline-dot"></span><div><p class="timeline-status">Sociedad</p><h3>La noche se organiza</h3><p>Clima dinámico, diplomacia, incidentes, asedios y encuentros de caravana, bandidos, mascaradas y cacerías.</p></div></li>
+        <li class="reveal timeline-next"><span class="timeline-dot"></span><div><p class="timeline-status">Siguiente</p><h3>Playtesting cerrado</h3><p>Probar con jugadores reales, ajustar el balance y pulir la experiencia antes de hablar de una apertura.</p></div></li>
+      </ol>
+    </section>
+
+    <section class="soon section" id="pronto">
+      <div class="soon-inner reveal">
+        <p class="kicker">Próximamente</p>
+        <p class="soon-word">Pronto.</p>
+        <h2>Todavía no hay fecha.<br>Y eso es parte del plan.</h2>
+        <p>No hay acceso público, registro abierto ni servidor al que conectarse. Cuando SanguinarisMC esté listo, este será el primer lugar donde se anuncie.</p>
+        <div class="soon-actions">
+          <a class="button button-primary" href="assets/SanguinarisMC-Dossier.pdf">Descargar el dossier</a>
+          <a class="button button-ghost" href="#top">Volver al inicio</a>
+        </div>
+        <p class="soon-note">Proyecto independiente. Sin afiliación con Mojang Studios, Microsoft, Stunlock Studios o V Rising.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <img src="assets/favicon.svg" alt="" width="32" height="32">
+      <span>Sanguinaris<span>MC</span></span>
+    </div>
+    <p>Un mundo sobrenatural en construcción. SanguinarisMC.com</p>
+    <p class="footer-legal">Minecraft es una marca de Mojang Studios. SanguinarisMC es un proyecto independiente y no está afiliado a Mojang, Microsoft, Stunlock Studios ni V Rising. © <span id="year">2026</span> SanguinarisMC.</p>
+  </footer>
+</body>
+</html>

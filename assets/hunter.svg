@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 800" role="img" aria-labelledby="t d">
+  <title id="t">Cazadores</title>
+  <desc id="d">Ilustración original de una torre de vigilancia con un farol al amanecer.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1b1a26"/><stop offset=".55" stop-color="#3a2a2a"/><stop offset="1" stop-color="#1a120e"/></linearGradient>
+    <radialGradient id="sun" cx="50%" cy="55%" r="50%"><stop offset="0" stop-color="#f3c978" stop-opacity=".85"/><stop offset="1" stop-color="#f3c978" stop-opacity="0"/></radialGradient>
+    <radialGradient id="lamp" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#ffd98c"/><stop offset="1" stop-color="#ffd98c" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="640" height="800" fill="url(#sky)"/>
+  <circle cx="440" cy="320" r="200" fill="url(#sun)"/>
+  <circle cx="440" cy="320" r="62" fill="#f0c778" opacity=".9"/>
+  <path d="M0 800 L0 560 L90 500 L180 560 L260 500 L350 570 L440 510 L540 580 L640 520 L640 800 Z" fill="#08090b"/>
+  <g fill="#0a0908">
+    <path d="M160 800 L160 320 L190 300 L470 300 L500 320 L500 800 Z"/>
+    <path d="M140 330 L330 190 L520 330 Z"/>
+    <path d="M210 800 L210 390 L450 390 L450 800 Z" fill="#0c0b09"/>
+    <rect x="290" y="430" width="80" height="90" fill="#1b1915"/>
+    <rect x="370" y="430" width="80" height="90" fill="#1b1915"/>
+    <rect x="290" y="560" width="160" height="18" fill="#17130e"/>
+    <path d="M250 800 L250 650 L390 650 L390 800 Z" fill="#15110d"/>
+  </g>
+  <g stroke="#c9a45c" stroke-width="4" fill="none" opacity=".75">
+    <path d="M210 360 L450 360"/><path d="M230 380 L430 380"/>
+  </g>
+  <g>
+    <circle cx="470" cy="500" r="90" fill="url(#lamp)" opacity=".55"/>
+    <rect x="456" y="470" width="28" height="38" rx="5" fill="#d9a44c"/>
+    <path d="M452 470 L488 470 L480 452 L460 452 Z" fill="#8d6a2f"/>
+    <path d="M452 508 L488 508 L480 522 L460 522 Z" fill="#8d6a2f"/>
+    <path d="M470 468 L470 440" stroke="#c9a45c" stroke-width="3"/>
+  </g>
+  <g fill="#090807">
+    <path d="M300 620 L300 560 L320 560 L320 620 Z"/>
+    <circle cx="310" cy="545" r="12"/>
+    <path d="M286 560 L334 560 L342 640 L278 640 Z"/>
+    <path d="M278 640 L342 640 L352 740 L268 740 Z"/>
+    <path d="M342 600 L378 580 L384 592 L348 618 Z"/>
+  </g>
+  <g fill="#0b0a08">
+    <path d="M120 800 L120 680 L150 630 L180 680 L180 800 Z"/>
+    <path d="M500 800 L500 690 L530 640 L560 690 L560 800 Z"/>
+  </g>
+  <g fill="#d8c7a3" opacity=".5">
+    <path d="M70 220 Q85 207 100 220 Q85 214 70 220 Q55 214 40 220 Q55 207 70 220 Z"/>
+    <path d="M540 170 Q552 159 564 170 Q552 165 540 170 Q528 165 516 170 Q528 159 540 170 Z"/>
+  </g>
+  <rect width="640" height="800" fill="none" stroke="#3a2b1c" stroke-width="2"/>
+</svg>

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 800" role="img" aria-labelledby="t d">
+  <title id="t">Hombres lobo</title>
+  <desc id="d">Ilustración original de un lobo bajo la luna en un bosque de pinos.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#081219"/><stop offset="1" stop-color="#04070a"/></linearGradient>
+    <radialGradient id="moon" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#f1e8cf"/><stop offset="1" stop-color="#cfc3a6"/></radialGradient>
+    <radialGradient id="halo" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#cfe0e6" stop-opacity=".4"/><stop offset="1" stop-color="#cfe0e6" stop-opacity="0"/></radialGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="14"/></filter>
+  </defs>
+  <rect width="640" height="800" fill="url(#bg)"/>
+  <circle cx="330" cy="250" r="190" fill="url(#halo)" filter="url(#blur)"/>
+  <circle cx="330" cy="250" r="105" fill="url(#moon)"/>
+  <g fill="#050a0d">
+    <path d="M0 800 L0 470 L45 410 L90 470 L90 800 Z"/>
+    <path d="M80 800 L80 510 L120 450 L160 510 L160 800 Z"/>
+    <path d="M480 800 L480 430 L525 365 L570 430 L570 800 Z"/>
+    <path d="M560 800 L560 500 L600 445 L640 500 L640 800 Z"/>
+  </g>
+  <g fill="#03070a">
+    <path d="M180 800 C200 660 240 560 250 480 C258 420 300 380 330 380 C370 380 405 420 415 480 C430 560 460 660 480 800 Z"/>
+    <path d="M250 480 L230 400 L270 440 L280 370 L310 430 L330 350 L355 430 L390 370 L400 440 L440 400 L415 480 Z"/>
+    <path d="M270 520 L245 470 L295 500 Z"/>
+    <path d="M390 520 L415 470 L365 500 Z"/>
+    <path d="M285 440 L300 435 L305 455 L290 458 Z" fill="#d8a04c"/>
+    <path d="M360 440 L375 435 L370 458 L355 455 Z" fill="#d8a04c"/>
+    <path d="M300 500 L330 515 L360 500 L345 535 L330 545 L315 535 Z" fill="#0a1014"/>
+    <path d="M312 545 L330 560 L348 545 L340 575 L330 585 L320 575 Z" fill="#0a1014"/>
+  </g>
+  <g fill="#081116" opacity=".9">
+    <path d="M0 800 L0 650 L70 590 L140 660 L210 600 L280 680 L350 620 L420 690 L500 620 L570 680 L640 630 L640 800 Z"/>
+  </g>
+  <g opacity=".28" fill="#cfe0e6">
+    <ellipse cx="320" cy="700" rx="280" ry="34"/><ellipse cx="240" cy="740" rx="200" ry="24"/>
+  </g>
+  <g fill="#c9a45c" opacity=".8">
+    <circle cx="292" cy="447" r="3"/><circle cx="368" cy="447" r="3"/>
+  </g>
+  <rect width="640" height="800" fill="none" stroke="#1c2b33" stroke-width="2"/>
+</svg>
