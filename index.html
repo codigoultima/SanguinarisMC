@@ -55,7 +55,7 @@
           <a class="button button-primary" href="#mundo">Descubrir el mundo</a>
           <a class="button button-ghost" href="assets/SanguinarisMC-Dossier.pdf">Leer el dossier <span class="button-meta">PDF</span></a>
         </div>
-        <p class="hero-footnote">Versión interna 0.10.3 · Verificada en Purpur 1.21.4 · Apertura por anunciar.</p>
+        <p class="hero-footnote">Versión interna 0.10.4 · Verificada en Purpur 1.21.4 · Apertura por anunciar.</p>
       </div>
       <a class="scroll-cue" href="#manifiesto" aria-label="Bajar a la presentación"><span></span>Desliza</a>
     </section>
@@ -76,11 +76,11 @@
           <dl>
             <div><dt>Proyecto</dt><dd>En desarrollo</dd></div>
             <div><dt>Base jugable</dt><dd>Probada internamente</dd></div>
-            <div><dt>Versión interna</dt><dd>0.10.3</dd></div>
+            <div><dt>Versión interna</dt><dd>0.10.4</dd></div>
             <div><dt>Servidor</dt><dd>Pruebas cerradas</dd></div>
             <div><dt>Fecha pública</dt><dd>Por anunciar</dd></div>
           </dl>
-          <p class="note-small">La build 0.10.3 pasó 151 pruebas automatizadas y se verificó en Purpur 1.21.4. Incluye la rotación variable de cuernos con sonidos propios y tutoriales que muestran todos los rangos superados de una vez. El servidor sigue cerrado y no tiene fecha de apertura anunciada.</p>
+          <p class="note-small">La build 0.10.4 pasó 155 pruebas automatizadas y se verificó en Purpur 1.21.4. Los beacons de grupo ahora solo son accesibles por quienes pertenecen a ese grupo. El servidor sigue cerrado y no tiene fecha de apertura anunciada.</p>
         </aside>
       </div>
     </section>
@@ -188,11 +188,12 @@
         <h2>La noche cambió.<br>Esto es lo que hay de nuevo.</h2>
         <p class="section-sub">Registro de las iteraciones internas. Elige una versión en la pestaña o ciérrala cuando ya la hayas leído: lo que se añadió, lo que se ajustó y lo que se corrigió, sin detalles internos.</p>
       </div>
-      <div class="patch-panel" id="patch-panel" data-current="0.10.3">
+      <div class="patch-panel" id="patch-panel" data-current="0.10.4">
         <div class="patch-bar">
-          <p class="patch-bar-title">Notas del parche <span class="patch-current">0.10.3</span></p>
+          <p class="patch-bar-title">Notas del parche <span class="patch-current">0.10.4</span></p>
           <div class="patch-tabs" role="tablist" aria-label="Versiones del parche">
-            <button class="patch-tab" type="button" role="tab" id="tab-0-10-3" aria-controls="panel-0-10-3" aria-selected="true">0.10.3</button>
+            <button class="patch-tab" type="button" role="tab" id="tab-0-10-4" aria-controls="panel-0-10-4" aria-selected="true">0.10.4</button>
+            <button class="patch-tab" type="button" role="tab" id="tab-0-10-3" aria-controls="panel-0-10-3" aria-selected="false" tabindex="-1">0.10.3</button>
             <button class="patch-tab" type="button" role="tab" id="tab-0-10-2" aria-controls="panel-0-10-2" aria-selected="false" tabindex="-1">0.10.2</button>
             <button class="patch-tab" type="button" role="tab" id="tab-0-10-1" aria-controls="panel-0-10-1" aria-selected="false" tabindex="-1">0.10.1</button>
             <button class="patch-tab" type="button" role="tab" id="tab-0-10-0" aria-controls="panel-0-10-0" aria-selected="false" tabindex="-1">0.10.0</button>
@@ -210,6 +211,41 @@
           </button>
         </div>
         <div class="patch-body" id="patch-body">
+
+      <article class="patch-card" role="tabpanel" id="panel-0-10-4" aria-labelledby="tab-0-10-4" tabindex="0">
+        <header class="patch-head">
+          <div>
+            <p class="patch-version">Parche interno 0.10.4</p>
+            <h3>Un refugio también es del grupo</h3>
+          </div>
+          <p class="patch-date">2 de noviembre de 2026<br>Build interna</p>
+        </header>
+        <div class="patch-grid">
+          <section class="patch-col patch-added">
+            <h4><span>Añadido</span></h4>
+            <ul>
+              <li><strong>Los beacons de grupo tienen un alcance propio.</strong> Cada grupo mantiene su beacon y sus miembros pueden encontrarlo sin mezclarlo con el resto de la facción.</li>
+              <li><strong>Cada linaje tiene su propio beacon.</strong> Los refugios de linajes distintos ya no se reemplazan entre sí.</li>
+            </ul>
+          </section>
+          <section class="patch-col patch-changed">
+            <h4><span>Cambiado</span></h4>
+            <ul>
+              <li><strong>Los beacons se limpian sin acortar la duración de uno recién colocado.</strong> El temporizador anterior ya no borra el reemplazo por accidente.</li>
+            </ul>
+          </section>
+          <section class="patch-col patch-fixed">
+            <h4><span>Corregido</span></h4>
+            <ul>
+              <li><strong>Un jugador de la misma facción, pero fuera del grupo, ya no puede usar un beacon de grupo.</strong> También se rechazan los usos de linaje sin pertenecer a uno.</li>
+            </ul>
+          </section>
+        </div>
+        <div class="patch-tags">
+          <span>Beacons</span><span>Grupos</span><span>Privacidad de facción</span><span>155 pruebas automatizadas</span>
+        </div>
+        <p class="patch-note">Build verificada en Purpur 1.21.4. Se comprobaron los permisos de miembro y no miembro del grupo en vivo.</p>
+      </article>
 
       <article class="patch-card" role="tabpanel" id="panel-0-10-3" aria-labelledby="tab-0-10-3" tabindex="0">
         <header class="patch-head">
