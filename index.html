@@ -55,7 +55,7 @@
           <a class="button button-primary" href="#mundo">Descubrir el mundo</a>
           <a class="button button-ghost" href="assets/SanguinarisMC-Dossier.pdf">Leer el dossier <span class="button-meta">PDF</span></a>
         </div>
-        <p class="hero-footnote">Versión interna 0.10.0 · Servidor de pruebas cerrado · Apertura por anunciar.</p>
+        <p class="hero-footnote">Versión interna 0.10.1 · Build empaquetada; prueba integrada pendiente · Apertura por anunciar.</p>
       </div>
       <a class="scroll-cue" href="#manifiesto" aria-label="Bajar a la presentación"><span></span>Desliza</a>
     </section>
@@ -76,11 +76,11 @@
           <dl>
             <div><dt>Proyecto</dt><dd>En desarrollo</dd></div>
             <div><dt>Base jugable</dt><dd>Probada internamente</dd></div>
-            <div><dt>Versión interna</dt><dd>0.10.0</dd></div>
+            <div><dt>Versión interna</dt><dd>0.10.1</dd></div>
             <div><dt>Servidor</dt><dd>Pruebas cerradas</dd></div>
             <div><dt>Fecha pública</dt><dd>Por anunciar</dd></div>
           </dl>
-          <p class="note-small">Esta página presenta el proyecto; el servidor sigue en pruebas cerradas y no tiene fecha de apertura anunciada.</p>
+          <p class="note-small">La build 0.10.1 está empaquetada y pasó 144 pruebas automatizadas; todavía falta verificarla en una sesión integrada del servidor Purpur. El servidor sigue cerrado y no tiene fecha de apertura anunciada.</p>
         </aside>
       </div>
     </section>
@@ -175,11 +175,12 @@
         <h2>La noche cambió.<br>Esto es lo que hay de nuevo.</h2>
         <p class="section-sub">Registro de las iteraciones internas. Elige una versión en la pestaña o ciérrala cuando ya la hayas leído: lo que se añadió, lo que se ajustó y lo que se corrigió, sin detalles internos.</p>
       </div>
-      <div class="patch-panel" id="patch-panel" data-current="0.10.0">
+      <div class="patch-panel" id="patch-panel" data-current="0.10.1">
         <div class="patch-bar">
-          <p class="patch-bar-title">Notas del parche <span class="patch-current">0.10.0</span></p>
+          <p class="patch-bar-title">Notas del parche <span class="patch-current">0.10.1</span></p>
           <div class="patch-tabs" role="tablist" aria-label="Versiones del parche">
-            <button class="patch-tab" type="button" role="tab" id="tab-0-10-0" aria-controls="panel-0-10-0" aria-selected="true">0.10.0</button>
+            <button class="patch-tab" type="button" role="tab" id="tab-0-10-1" aria-controls="panel-0-10-1" aria-selected="true">0.10.1</button>
+            <button class="patch-tab" type="button" role="tab" id="tab-0-10-0" aria-controls="panel-0-10-0" aria-selected="false" tabindex="-1">0.10.0</button>
             <button class="patch-tab" type="button" role="tab" id="tab-0-8-0" aria-controls="panel-0-8-0" aria-selected="false" tabindex="-1">0.8.0</button>
             <button class="patch-tab" type="button" role="tab" id="tab-0-7-0" aria-controls="panel-0-7-0" aria-selected="false" tabindex="-1">0.7.0</button>
             <button class="patch-tab" type="button" role="tab" id="tab-0-6-0" aria-controls="panel-0-6-0" aria-selected="false" tabindex="-1">0.6.0</button>
@@ -194,6 +195,47 @@
           </button>
         </div>
         <div class="patch-body" id="patch-body">
+
+      <article class="patch-card" role="tabpanel" id="panel-0-10-1" aria-labelledby="tab-0-10-1" tabindex="0">
+        <header class="patch-head">
+          <div>
+            <p class="patch-version">Parche interno 0.10.1</p>
+            <h3>La noche se vuelve más legible</h3>
+          </div>
+          <p class="patch-date">2 de noviembre de 2026<br>Build interna</p>
+        </header>
+        <div class="patch-grid">
+          <section class="patch-col patch-added">
+            <h4><span>Añadido</span></h4>
+            <ul>
+              <li><strong>Un mapa más claro.</strong> El render pasa a 128×128, usa una paleta de terreno más cercana a Minecraft y marcadores contrastados que reflejan la facción. Evita cargar chunks lejanos y se actualiza con menos frecuencia cuando no te mueves.</li>
+              <li><strong>Más orientación al subir de rango.</strong> Los avisos muestran las opciones que se desbloquean para tu rango y facción, como habilidades, forja, contratos o diplomacia.</li>
+              <li><strong>Más opciones en los mercados.</strong> Se amplían los catálogos generales y de facción, incluyendo una oferta ritual para Brujos.</li>
+              <li><strong>El gacha acompaña mejor sus tiradas semanales.</strong> La garantía de premio medio predeterminada llega en tres tiradas; la piedad de premio alto permanece en doce.</li>
+              <li><strong>Recetas de esencia comprobadas.</strong> La receta de seis panes entrega la Esencia de la Vigilia y devuelve el trigo en una prueba focal en Purpur 1.21.4.</li>
+            </ul>
+          </section>
+          <section class="patch-col patch-changed">
+            <h4><span>Cambiado</span></h4>
+            <ul>
+              <li><strong>Una identidad por facción.</strong> Tab, título del scoreboard y actionbar usan el tema de color de la facción.</li>
+              <li><strong>El mercado rotativo limita las compras antes de entregar.</strong> El stock se reserva en SQLite antes del cobro; si no se puede cobrar, se intenta cancelar esa reserva.</li>
+              <li><strong>Las configuraciones existentes se respetan.</strong> Las claves nuevas de tienda, gacha y rotación se incorporan sin sobrescribir valores personalizados.</li>
+            </ul>
+          </section>
+          <section class="patch-col patch-fixed">
+            <h4><span>Corregido</span></h4>
+            <ul>
+              <li><strong>Las compras rápidas ya no dependen de un registro tardío del stock.</strong> El límite se aplica en SQLite antes de procesar el pago y entregar el objeto.</li>
+              <li><strong>El mapa ya no tapa el terreno con un título.</strong> También deja de consultar bloques en chunks que no están cargados.</li>
+            </ul>
+          </section>
+        </div>
+        <div class="patch-tags">
+          <span>144 pruebas automatizadas</span><span>Mapa</span><span>Progresión</span><span>Economía</span><span>HUD temática</span>
+        </div>
+        <p class="patch-note">Empaquetada para Purpur 1.21.4. Las 144 pruebas automatizadas pasan; el arranque y la experiencia integrada de esta build aún no se han verificado en vivo. No incluye texturas nuevas ni reposiciona la HUD vanilla o el chat.</p>
+      </article>
 
       <article class="patch-card" role="tabpanel" id="panel-0-10-0" aria-labelledby="tab-0-10-0" tabindex="0">
         <header class="patch-head">
@@ -596,7 +638,7 @@
         <li class="reveal"><span class="timeline-dot"></span><div><p class="timeline-status">Base</p><h3>El esqueleto del mundo</h3><p>Facciones, recursos, habilidades, refugios, contratos, tiendas y eventos funcionando en pruebas internas.</p></div></li>
         <li class="reveal"><span class="timeline-dot"></span><div><p class="timeline-status">Mundo vivo</p><h3>Alguien más está despierto</h3><p>NPCs nativos con rutinas, diálogo, comercio y contratos. Objetos exclusivos que no se consiguen en vanilla.</p></div></li>
         <li class="reveal"><span class="timeline-dot"></span><div><p class="timeline-status">Sociedad</p><h3>La noche se organiza</h3><p>Clima dinámico, diplomacia, incidentes, asedios y encuentros de caravana, bandidos, mascaradas y cacerías.</p></div></li>
-        <li class="reveal timeline-next"><span class="timeline-dot"></span><div><p class="timeline-status">Siguiente</p><h3>Playtesting cerrado</h3><p>Probar con jugadores reales, ajustar el balance y pulir la experiencia antes de hablar de una apertura.</p></div></li>
+        <li class="reveal timeline-next"><span class="timeline-dot"></span><div><p class="timeline-status">Siguiente · en planificación</p><h3>Más motivos para volver</h3><p>La próxima etapa propuesta prioriza grietas con victoria ligada a derrotar al jefe, encuentros con más fases y cooperación, metas compartidas por facción y descubrimientos de exploración. Son ideas para el siguiente ciclo, no funciones incluidas en la 0.10.1.</p></div></li>
       </ol>
     </section>
 

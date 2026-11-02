@@ -58,7 +58,7 @@
 
   const patchSection = document.querySelector('#novedades');
   if (patchSection) {
-    const storageKey = 'sanguinaris.patches';
+    const storageKey = 'sanguinaris.patches.v2';
     const tabs = Array.from(patchSection.querySelectorAll('.patch-tab'));
     const panels = Array.from(patchSection.querySelectorAll('.patch-card[role="tabpanel"]'));
     const toggle = patchSection.querySelector('.patch-toggle');
