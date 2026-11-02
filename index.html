@@ -55,7 +55,7 @@
           <a class="button button-primary" href="#mundo">Descubrir el mundo</a>
           <a class="button button-ghost" href="assets/SanguinarisMC-Dossier.pdf">Leer el dossier <span class="button-meta">PDF</span></a>
         </div>
-        <p class="hero-footnote">Versión interna 0.10.1 · Build empaquetada; prueba integrada pendiente · Apertura por anunciar.</p>
+        <p class="hero-footnote">Versión interna 0.10.2 · Build empaquetada; prueba integrada pendiente · Apertura por anunciar.</p>
       </div>
       <a class="scroll-cue" href="#manifiesto" aria-label="Bajar a la presentación"><span></span>Desliza</a>
     </section>
@@ -76,11 +76,11 @@
           <dl>
             <div><dt>Proyecto</dt><dd>En desarrollo</dd></div>
             <div><dt>Base jugable</dt><dd>Probada internamente</dd></div>
-            <div><dt>Versión interna</dt><dd>0.10.1</dd></div>
+            <div><dt>Versión interna</dt><dd>0.10.2</dd></div>
             <div><dt>Servidor</dt><dd>Pruebas cerradas</dd></div>
             <div><dt>Fecha pública</dt><dd>Por anunciar</dd></div>
           </dl>
-          <p class="note-small">La build 0.10.1 está empaquetada y pasó 144 pruebas automatizadas; todavía falta verificarla en una sesión integrada del servidor Purpur. El servidor sigue cerrado y no tiene fecha de apertura anunciada.</p>
+          <p class="note-small">La build 0.10.2 está empaquetada y pasó 147 pruebas automatizadas; todavía falta verificarla en una sesión integrada del servidor Purpur. El servidor sigue cerrado y no tiene fecha de apertura anunciada.</p>
         </aside>
       </div>
     </section>
@@ -188,11 +188,12 @@
         <h2>La noche cambió.<br>Esto es lo que hay de nuevo.</h2>
         <p class="section-sub">Registro de las iteraciones internas. Elige una versión en la pestaña o ciérrala cuando ya la hayas leído: lo que se añadió, lo que se ajustó y lo que se corrigió, sin detalles internos.</p>
       </div>
-      <div class="patch-panel" id="patch-panel" data-current="0.10.1">
+      <div class="patch-panel" id="patch-panel" data-current="0.10.2">
         <div class="patch-bar">
-          <p class="patch-bar-title">Notas del parche <span class="patch-current">0.10.1</span></p>
+          <p class="patch-bar-title">Notas del parche <span class="patch-current">0.10.2</span></p>
           <div class="patch-tabs" role="tablist" aria-label="Versiones del parche">
-            <button class="patch-tab" type="button" role="tab" id="tab-0-10-1" aria-controls="panel-0-10-1" aria-selected="true">0.10.1</button>
+            <button class="patch-tab" type="button" role="tab" id="tab-0-10-2" aria-controls="panel-0-10-2" aria-selected="true">0.10.2</button>
+            <button class="patch-tab" type="button" role="tab" id="tab-0-10-1" aria-controls="panel-0-10-1" aria-selected="false" tabindex="-1">0.10.1</button>
             <button class="patch-tab" type="button" role="tab" id="tab-0-10-0" aria-controls="panel-0-10-0" aria-selected="false" tabindex="-1">0.10.0</button>
             <button class="patch-tab" type="button" role="tab" id="tab-0-8-0" aria-controls="panel-0-8-0" aria-selected="false" tabindex="-1">0.8.0</button>
             <button class="patch-tab" type="button" role="tab" id="tab-0-7-0" aria-controls="panel-0-7-0" aria-selected="false" tabindex="-1">0.7.0</button>
@@ -208,6 +209,42 @@
           </button>
         </div>
         <div class="patch-body" id="patch-body">
+
+      <article class="patch-card" role="tabpanel" id="panel-0-10-2" aria-labelledby="tab-0-10-2" tabindex="0">
+        <header class="patch-head">
+          <div>
+            <p class="patch-version">Parche interno 0.10.2</p>
+            <h3>Una Grieta que hay que cerrar</h3>
+          </div>
+          <p class="patch-date">2 de noviembre de 2026<br>Build interna</p>
+        </header>
+        <div class="patch-grid">
+          <section class="patch-col patch-added">
+            <h4><span>Añadido</span></h4>
+            <ul>
+              <li><strong>La Grieta ahora tiene una condición de victoria.</strong> El jefe debe ser derrotado antes de que venza el tiempo; completar el temporizador ya no entrega premios.</li>
+              <li><strong>El botín reconoce la cooperación.</strong> Las Marcas configuradas se reparten proporcionalmente al daño aportado por los combatientes conectados. La persona con mayor contribución obtiene una esencia de su facción.</li>
+              <li><strong>El encuentro expira limpiamente.</strong> Si el jefe no cae, la Grieta se cierra sin recompensa; una invocación fallida tampoco inicia un evento ni deja un premio programado.</li>
+            </ul>
+          </section>
+          <section class="patch-col patch-changed">
+            <h4><span>Cambiado</span></h4>
+            <ul>
+              <li><strong>La duración es un límite del combate.</strong> El jugador ya no recibe el premio por ser quien inició el temporizador; la recompensa depende de vencer al jefe.</li>
+            </ul>
+          </section>
+          <section class="patch-col patch-fixed">
+            <h4><span>Corregido</span></h4>
+            <ul>
+              <li><strong>Se elimina la recompensa automática al pasar el tiempo.</strong> Esto evita cobrar la Grieta sin combatir y hace que su conclusión dependa de la victoria.</li>
+            </ul>
+          </section>
+        </div>
+        <div class="patch-tags">
+          <span>Grietas</span><span>Jefes</span><span>Recompensa cooperativa</span><span>147 pruebas automatizadas</span>
+        </div>
+        <p class="patch-note">Empaquetada para Purpur 1.21.4. Las 147 pruebas automatizadas pasan; el arranque y la experiencia integrada de esta build aún no se han verificado en vivo.</p>
+      </article>
 
       <article class="patch-card" role="tabpanel" id="panel-0-10-1" aria-labelledby="tab-0-10-1" tabindex="0">
         <header class="patch-head">
@@ -651,7 +688,7 @@
         <li class="reveal"><span class="timeline-dot"></span><div><p class="timeline-status">Base</p><h3>El esqueleto del mundo</h3><p>Facciones, recursos, habilidades, refugios, contratos, tiendas y eventos funcionando en pruebas internas.</p></div></li>
         <li class="reveal"><span class="timeline-dot"></span><div><p class="timeline-status">Mundo vivo</p><h3>Alguien más está despierto</h3><p>NPCs nativos con rutinas, diálogo, comercio y contratos. Objetos exclusivos que no se consiguen en vanilla.</p></div></li>
         <li class="reveal"><span class="timeline-dot"></span><div><p class="timeline-status">Sociedad</p><h3>La noche se organiza</h3><p>Clima dinámico, diplomacia, incidentes, asedios y encuentros de caravana, bandidos, mascaradas y cacerías.</p></div></li>
-        <li class="reveal timeline-next"><span class="timeline-dot"></span><div><p class="timeline-status">Siguiente · en planificación</p><h3>Más motivos para volver</h3><p>La próxima etapa propuesta prioriza grietas con victoria ligada a derrotar al jefe, encuentros con más fases y cooperación, metas compartidas por facción y descubrimientos de exploración. Son ideas para el siguiente ciclo, no funciones incluidas en la 0.10.1.</p></div></li>
+        <li class="reveal timeline-next"><span class="timeline-dot"></span><div><p class="timeline-status">Siguiente · en planificación</p><h3>Más motivos para volver</h3><p>La siguiente etapa propuesta prioriza encuentros con más fases y ataques anticipables, metas compartidas por facción y descubrimientos de exploración. Son ideas en planificación, no funciones incluidas en la 0.10.2.</p></div></li>
       </ol>
     </section>
 

@@ -58,9 +58,11 @@
 
   const patchSection = document.querySelector('#novedades');
   if (patchSection) {
-    const storageKey = 'sanguinaris.patches.v2';
+    const storageKey = 'sanguinaris.patches.v3';
     const tabs = Array.from(patchSection.querySelectorAll('.patch-tab'));
     const panels = Array.from(patchSection.querySelectorAll('.patch-card[role="tabpanel"]'));
+    const patchPanel = patchSection.querySelector('.patch-panel');
+    const currentLabel = patchSection.querySelector('.patch-current');
     const toggle = patchSection.querySelector('.patch-toggle');
     const toggleLabel = patchSection.querySelector('.patch-toggle-label');
     let saved = {};
@@ -83,6 +85,12 @@
       panels.forEach((panel) => {
         panel.hidden = panel.id !== target;
       });
+      if (patchPanel) {
+        patchPanel.dataset.current = tab.textContent.trim();
+      }
+      if (currentLabel) {
+        currentLabel.textContent = tab.textContent.trim();
+      }
       saved.tab = tab.id.replace('tab-', '');
     };
 
