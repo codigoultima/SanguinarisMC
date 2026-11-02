@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="title desc">
+  <title id="title">El círculo arcano</title>
+  <desc id="desc">Un grimorio abierto y un círculo violeta bajo una luna creciente, entre ruinas oscuras.</desc>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop stop-color="#161025"/>
+      <stop offset=".58" stop-color="#301d42"/>
+      <stop offset="1" stop-color="#090910"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop stop-color="#d7a8ff" stop-opacity=".9"/>
+      <stop offset=".35" stop-color="#a44be0" stop-opacity=".34"/>
+      <stop offset="1" stop-color="#8d35d1" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="book" x2="0" y2="1">
+      <stop stop-color="#8056a0"/>
+      <stop offset="1" stop-color="#20152c"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#sky)"/>
+  <circle cx="414" cy="370" r="290" fill="url(#glow)"/>
+  <path d="M491 133c-89 16-143 105-119 193 19 70 84 112 151 105-45 38-111 48-168 19-87-44-122-151-78-238 39-77 128-112 214-79Z" fill="#eadbff"/>
+  <g fill="none" stroke="#d4a0ff" opacity=".8">
+    <circle cx="400" cy="465" r="170" stroke-width="3"/>
+    <circle cx="400" cy="465" r="133" stroke-width="2"/>
+    <path d="M400 270 448 410l145 55-145 55-48 140-48-140-145-55 145-55z" stroke-width="2"/>
+    <path d="m400 332 37 96 99 37-99 38-37 96-37-96-99-38 99-37z" stroke-width="2"/>
+    <path d="M400 295v340M230 465h340M280 345l240 240m0-240L280 585" stroke-width="1"/>
+  </g>
+  <g fill="#e7c8ff">
+    <circle cx="400" cy="296" r="6"/><circle cx="569" cy="465" r="6"/>
+    <circle cx="400" cy="634" r="6"/><circle cx="231" cy="465" r="6"/>
+    <path d="m400 424 12 41-12 41-12-41z"/>
+  </g>
+  <path d="M0 690 128 548l63 69 98-175 71 117 100-144 72 112 92-82 176 227v328H0z" fill="#11101a"/>
+  <path d="M0 785c133-61 224-47 335-19 121 30 249 37 465-33v267H0z" fill="#090910"/>
+  <g transform="translate(255 600)">
+    <path d="m0 153 126-75 135 75v141L128 365 0 294z" fill="#130f1b" stroke="#b37ad4" stroke-width="4"/>
+    <path d="m0 153 126 78v134L0 294zm261 0-135 78v134l135-71z" fill="url(#book)" stroke="#d6b1e6" stroke-width="4"/>
+    <path d="m34 177 69 42m124-42-79 42M34 221l69 40m124-40-79 40M34 263l69 40m124-40-79 40" stroke="#d6b1e6" stroke-width="4" opacity=".75"/>
+    <path d="m126 78 14-50 17 45 45 13-45 14-17 46-14-46-46-14z" fill="#dfb1ff"/>
+  </g>
+  <g fill="#b86ce8" opacity=".8">
+    <circle cx="216" cy="705" r="4"/><circle cx="584" cy="740" r="5"/>
+    <circle cx="190" cy="535" r="3"/><circle cx="634" cy="540" r="4"/>
+    <circle cx="530" cy="300" r="3"/><circle cx="260" cy="412" r="4"/>
+  </g>
+</svg>

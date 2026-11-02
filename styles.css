@@ -337,7 +337,7 @@ p { margin: 0 0 1.15em; }
   max-width: var(--max);
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1.2rem;
 }
 .faction-card {
@@ -627,7 +627,7 @@ p { margin: 0 0 1.15em; }
   .site-nav { gap: 0.95rem; font-size: 0.72rem; }
   .header-cta { display: none; }
   .manifesto-grid, .lore { grid-template-columns: 1fr; }
-  .faction-grid { grid-template-columns: 1fr; max-width: 620px; }
+  .faction-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 760px; }
   .faction-art { aspect-ratio: 16 / 10; }
   .feature-grid { grid-template-columns: 1fr; }
   .patch-grid { grid-template-columns: 1fr; gap: 1.6rem; }
@@ -664,6 +664,10 @@ p { margin: 0 0 1.15em; }
   .hero h1 { font-size: clamp(3.8rem, 20vw, 6rem); }
   .button { width: 100%; justify-content: center; }
   .soon-inner { padding: 2rem 1.4rem; }
+}
+
+@media (max-width: 560px) {
+  .faction-grid { grid-template-columns: 1fr; max-width: 620px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
