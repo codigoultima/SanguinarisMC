@@ -15,8 +15,8 @@
   <meta property="og:image:alt" content="Valle gótico bajo la luna con un castillo, pinos y tres siluetas en el camino.">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=0.10.6">
-  <script defer src="main.js?v=0.10.6"></script>
+  <link rel="stylesheet" href="styles.css?v=0.10.7">
+  <script defer src="main.js?v=0.10.7"></script>
 </head>
 <body>
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -55,7 +55,7 @@
           <a class="button button-primary" href="#mundo">Descubrir el mundo</a>
           <a class="button button-ghost" href="assets/SanguinarisMC-Dossier.pdf">Leer el dossier <span class="button-meta">PDF</span></a>
         </div>
-        <p class="hero-footnote">Versión interna 0.10.6 · Build y arranque comprobados en Purpur 1.21.4 · Apertura por anunciar.</p>
+        <p class="hero-footnote">Versión interna 0.10.7 · Mapa actualizado para representar mejor las copas de árboles · Apertura por anunciar.</p>
       </div>
       <a class="scroll-cue" href="#manifiesto" aria-label="Bajar a la presentación"><span></span>Desliza</a>
     </section>
@@ -76,11 +76,11 @@
           <dl>
             <div><dt>Proyecto</dt><dd>En desarrollo</dd></div>
             <div><dt>Base jugable</dt><dd>Probada internamente</dd></div>
-            <div><dt>Versión interna</dt><dd>0.10.6</dd></div>
+            <div><dt>Versión interna</dt><dd>0.10.7</dd></div>
             <div><dt>Servidor</dt><dd>Pruebas cerradas</dd></div>
             <div><dt>Fecha pública</dt><dd>Por anunciar</dd></div>
           </dl>
-          <p class="note-small">La build 0.10.5 pasó 160 pruebas automatizadas y 34 comprobaciones de cliente en Purpur 1.21.4. El servidor sigue cerrado y no tiene fecha de apertura anunciada.</p>
+          <p class="note-small">La build 0.10.7 mejora la lectura del terreno en el mapa de niveles altos. El servidor sigue cerrado y no tiene fecha de apertura anunciada.</p>
         </aside>
       </div>
     </section>
@@ -190,11 +190,12 @@
         <h2>La noche cambió.<br>Esto es lo que hay de nuevo.</h2>
         <p class="section-sub">Registro de las iteraciones internas. Elige una versión en la pestaña o ciérrala cuando ya la hayas leído: lo que se añadió, lo que se ajustó y lo que se corrigió, sin detalles internos.</p>
       </div>
-      <div class="patch-panel" id="patch-panel" data-current="0.10.6">
+      <div class="patch-panel" id="patch-panel" data-current="0.10.7">
         <div class="patch-bar">
-          <p class="patch-bar-title">Notas del parche <span class="patch-current">0.10.6</span></p>
+          <p class="patch-bar-title">Notas del parche <span class="patch-current">0.10.7</span></p>
           <div class="patch-tabs" role="tablist" aria-label="Versiones del parche">
-            <button class="patch-tab" type="button" role="tab" id="tab-0-10-6" aria-controls="panel-0-10-6" aria-selected="true">0.10.6</button>
+            <button class="patch-tab" type="button" role="tab" id="tab-0-10-7" aria-controls="panel-0-10-7" aria-selected="true">0.10.7</button>
+            <button class="patch-tab" type="button" role="tab" id="tab-0-10-6" aria-controls="panel-0-10-6" aria-selected="false" tabindex="-1">0.10.6</button>
             <button class="patch-tab" type="button" role="tab" id="tab-0-10-5" aria-controls="panel-0-10-5" aria-selected="false" tabindex="-1">0.10.5</button>
             <button class="patch-tab" type="button" role="tab" id="tab-0-10-4" aria-controls="panel-0-10-4" aria-selected="false" tabindex="-1">0.10.4</button>
             <button class="patch-tab" type="button" role="tab" id="tab-0-10-3" aria-controls="panel-0-10-3" aria-selected="false" tabindex="-1">0.10.3</button>
@@ -215,6 +216,70 @@
           </button>
         </div>
         <div class="patch-body" id="patch-body">
+
+      <article class="patch-card" role="tabpanel" id="panel-0-10-7" aria-labelledby="tab-0-10-7" tabindex="0">
+        <header class="patch-head">
+          <div>
+            <p class="patch-version">Parche interno 0.10.7</p>
+            <h3>Una interfaz de verdad, no solo glifos</h3>
+          </div>
+          <p class="patch-date">2 de noviembre de 2026<br>Build interna</p>
+        </header>
+        <div class="patch-grid">
+          <section class="patch-col patch-added">
+            <h4><span>Añadido</span></h4>
+            <ul>
+              <li><strong>Paquetes gráficos completos para cada facción.</strong> Vampiros, Hombres lobo, Cazadores, Brujos y Miasma tienen su propia paleta para salud, hambre, armadura, respiración, hotbar y experiencia.</li>
+              <li><strong>Fondos pixel-art para inventario y menús de cofre.</strong> El cliente recibe la variante que corresponde a su facción.</li>
+            </ul>
+          </section>
+          <section class="patch-col patch-changed">
+            <h4><span>Cambiado</span></h4>
+            <ul>
+              <li><strong>El resource pack cambia según la facción.</strong> Al elegir o cambiar de facción, el plugin solicita su paquete; al rechazarlo, se conserva la interfaz vanilla.</li>
+              <li><strong>El terreno del mapa se dibuja desde su superficie superior.</strong> Varias muestras por píxel hacen visibles las copas y la vegetación al alejar el zoom, sin cargar chunks remotos.</li>
+            </ul>
+          </section>
+          <section class="patch-col patch-fixed">
+            <h4><span>Corregido</span></h4>
+            <ul>
+              <li><strong>Las manchas grises del mapa ya no ocultan la vegetación.</strong> El color dominante de varias muestras evita que una sola muestra de suelo convierta una copa en roca.</li>
+              <li><strong>Se comprueban las dimensiones y presencia de los sprites vanilla 1.21.4.</strong> Incluye estados de corazones, comida, aire y armadura por variante.</li>
+            </ul>
+          </section>
+        </div>
+        <div class="patch-tags">
+          <span>HUD por facción</span><span>Hotbar y corazones</span><span>Inventario pixel-art</span><span>Minimapa</span>
+        </div>
+        <div class="interface-preview" aria-label="Vista previa y descargas de las interfaces por facción">
+          <figure>
+            <figcaption>Vampiros</figcaption>
+            <img src="assets/ui-preview/vampiro-interface.png" alt="Inventario, hotbar, corazones, hambre, armadura y experiencia en tonos carmesí." loading="lazy">
+            <a href="assets/Sanguinaris-Resource-Pack-0.10.7-vampiro.zip" download>Descargar paquete de Vampiros</a>
+          </figure>
+          <figure>
+            <figcaption>Hombres lobo</figcaption>
+            <img src="assets/ui-preview/hombre_lobo-interface.png" alt="Interfaz completa de Hombres lobo en tonos azul lunar." loading="lazy">
+            <a href="assets/Sanguinaris-Resource-Pack-0.10.7-hombre_lobo.zip" download>Descargar paquete de Hombres lobo</a>
+          </figure>
+          <figure>
+            <figcaption>Cazadores</figcaption>
+            <img src="assets/ui-preview/cazador-interface.png" alt="Interfaz completa de Cazadores en tonos dorados." loading="lazy">
+            <a href="assets/Sanguinaris-Resource-Pack-0.10.7-cazador.zip" download>Descargar paquete de Cazadores</a>
+          </figure>
+          <figure>
+            <figcaption>Brujos</figcaption>
+            <img src="assets/ui-preview/brujo-interface.png" alt="Interfaz completa de Brujos en tonos violetas." loading="lazy">
+            <a href="assets/Sanguinaris-Resource-Pack-0.10.7-brujo.zip" download>Descargar paquete de Brujos</a>
+          </figure>
+          <figure>
+            <figcaption>Miasma</figcaption>
+            <img src="assets/ui-preview/miasma-interface.png" alt="Interfaz completa de Miasma en tonos verdes." loading="lazy">
+            <a href="assets/Sanguinaris-Resource-Pack-0.10.7-miasma.zip" download>Descargar paquete de Miasma</a>
+          </figure>
+        </div>
+        <p class="patch-note">Los sprites reemplazables conservan su posición vanilla; Paper no puede mover la HUD ni el chat. El número de nivel es texto y no tiene una textura independiente. Los packs son opcionales y también incluyen Miasma y una variante neutral.</p>
+      </article>
 
       <article class="patch-card" role="tabpanel" id="panel-0-10-6" aria-labelledby="tab-0-10-6" tabindex="0">
         <header class="patch-head">

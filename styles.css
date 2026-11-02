@@ -510,6 +510,39 @@ p { margin: 0 0 1.15em; }
   border: 1px solid rgba(201, 164, 92, 0.23);
   background: rgba(3, 5, 8, 0.9);
 }
+.interface-preview {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+  margin-top: 1.8rem;
+}
+.interface-preview figure {
+  min-width: 0;
+  margin: 0;
+  padding: 0.8rem;
+  border: 1px solid var(--line);
+  background: rgba(8, 10, 15, 0.62);
+}
+.interface-preview figcaption {
+  margin-bottom: 0.65rem;
+  color: var(--cream-dim);
+  font-size: 0.72rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+.interface-preview img {
+  display: block;
+  width: 100%;
+  height: auto;
+  image-rendering: pixelated;
+  border: 1px solid rgba(201, 164, 92, 0.23);
+}
+.interface-preview a {
+  display: inline-block;
+  margin-top: 0.7rem;
+  color: var(--cream-dim);
+  font-size: 0.75rem;
+}
 .patch-note { margin: 1.5rem 0 0; color: rgba(239, 231, 214, 0.45); font-size: 0.76rem; }
 
 .patch-panel { border: 1px solid var(--line); background: rgba(8, 10, 15, 0.5); }
@@ -697,6 +730,7 @@ p { margin: 0 0 1.15em; }
 @media (max-width: 560px) {
   .faction-grid { grid-template-columns: 1fr; max-width: 620px; }
   .texture-preview { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .interface-preview { grid-template-columns: 1fr; }
 }
 
 @media (prefers-reduced-motion: reduce) {
