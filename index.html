@@ -16,7 +16,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
-  <script defer src="main.js?v=0.10.5-r2"></script>
+  <script defer src="main.js?v=0.10.6"></script>
 </head>
 <body>
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -55,7 +55,7 @@
           <a class="button button-primary" href="#mundo">Descubrir el mundo</a>
           <a class="button button-ghost" href="assets/SanguinarisMC-Dossier.pdf">Leer el dossier <span class="button-meta">PDF</span></a>
         </div>
-        <p class="hero-footnote">Versión interna 0.10.5 · Build y arranque comprobados en Purpur 1.21.4 · Apertura por anunciar.</p>
+        <p class="hero-footnote">Versión interna 0.10.6 · Build y arranque comprobados en Purpur 1.21.4 · Apertura por anunciar.</p>
       </div>
       <a class="scroll-cue" href="#manifiesto" aria-label="Bajar a la presentación"><span></span>Desliza</a>
     </section>
@@ -76,7 +76,7 @@
           <dl>
             <div><dt>Proyecto</dt><dd>En desarrollo</dd></div>
             <div><dt>Base jugable</dt><dd>Probada internamente</dd></div>
-            <div><dt>Versión interna</dt><dd>0.10.5</dd></div>
+            <div><dt>Versión interna</dt><dd>0.10.6</dd></div>
             <div><dt>Servidor</dt><dd>Pruebas cerradas</dd></div>
             <div><dt>Fecha pública</dt><dd>Por anunciar</dd></div>
           </dl>
@@ -190,11 +190,12 @@
         <h2>La noche cambió.<br>Esto es lo que hay de nuevo.</h2>
         <p class="section-sub">Registro de las iteraciones internas. Elige una versión en la pestaña o ciérrala cuando ya la hayas leído: lo que se añadió, lo que se ajustó y lo que se corrigió, sin detalles internos.</p>
       </div>
-      <div class="patch-panel" id="patch-panel" data-current="0.10.5">
+      <div class="patch-panel" id="patch-panel" data-current="0.10.6">
         <div class="patch-bar">
-          <p class="patch-bar-title">Notas del parche <span class="patch-current">0.10.5</span></p>
+          <p class="patch-bar-title">Notas del parche <span class="patch-current">0.10.6</span></p>
           <div class="patch-tabs" role="tablist" aria-label="Versiones del parche">
-            <button class="patch-tab" type="button" role="tab" id="tab-0-10-5" aria-controls="panel-0-10-5" aria-selected="true">0.10.5</button>
+            <button class="patch-tab" type="button" role="tab" id="tab-0-10-6" aria-controls="panel-0-10-6" aria-selected="true">0.10.6</button>
+            <button class="patch-tab" type="button" role="tab" id="tab-0-10-5" aria-controls="panel-0-10-5" aria-selected="false" tabindex="-1">0.10.5</button>
             <button class="patch-tab" type="button" role="tab" id="tab-0-10-4" aria-controls="panel-0-10-4" aria-selected="false" tabindex="-1">0.10.4</button>
             <button class="patch-tab" type="button" role="tab" id="tab-0-10-3" aria-controls="panel-0-10-3" aria-selected="false" tabindex="-1">0.10.3</button>
             <button class="patch-tab" type="button" role="tab" id="tab-0-10-2" aria-controls="panel-0-10-2" aria-selected="false" tabindex="-1">0.10.2</button>
@@ -214,6 +215,42 @@
           </button>
         </div>
         <div class="patch-body" id="patch-body">
+
+      <article class="patch-card" role="tabpanel" id="panel-0-10-6" aria-labelledby="tab-0-10-6" tabindex="0">
+        <header class="patch-head">
+          <div>
+            <p class="patch-version">Parche interno 0.10.6</p>
+            <h3>La identidad ahora también se dibuja</h3>
+          </div>
+          <p class="patch-date">2 de noviembre de 2026<br>Build interna</p>
+        </header>
+        <div class="patch-grid">
+          <section class="patch-col patch-added">
+            <h4><span>Añadido</span></h4>
+            <ul>
+              <li><strong>Paneles y marcos pixel-art para las GUIs.</strong> Cada facción tiene piezas de borde, esquinas y relleno; el pack también contempla a Miasma.</li>
+              <li><strong>Arte gráfico propio para HUD y chat.</strong> El icono de recurso de la actionbar y el ornamento de mensajes cambian según la facción.</li>
+            </ul>
+          </section>
+          <section class="patch-col patch-changed">
+            <h4><span>Cambiado</span></h4>
+            <ul>
+              <li><strong>El plugin solicita el resource pack al entrar.</strong> Los modelos gráficos de las GUIs solo se aplican tras confirmar que el cliente cargó el paquete; si se rechaza, se conservan los iconos vanilla.</li>
+            </ul>
+          </section>
+          <section class="patch-col patch-fixed">
+            <h4><span>Límite técnico</span></h4>
+            <ul>
+              <li><strong>El chat y la HUD vanilla permanecen en su sitio.</strong> Minecraft no permite que un plugin Paper mueva esas superficies ni pinte fondos por jugador; el chat usa glifos decorativos, no un fondo reemplazable.</li>
+              <li><strong>161 pruebas automatizadas pasan.</strong> Los PNG, los modelos y las definiciones de glifos se validan en el paquete.</li>
+            </ul>
+          </section>
+        </div>
+        <div class="patch-tags">
+          <span>Paneles gráficos</span><span>HUD por facción</span><span>Chat temático</span><span>Resource pack 1.21.4</span>
+        </div>
+        <p class="patch-note">Los gráficos requieren aceptar el paquete. <a href="assets/Sanguinaris-Resource-Pack-0.10.6.zip" download>Descargar resource pack 0.10.6</a>. El servidor sigue en pruebas cerradas.</p>
+      </article>
 
       <article class="patch-card" role="tabpanel" id="panel-0-10-5" aria-labelledby="tab-0-10-5" tabindex="0">
         <header class="patch-head">
