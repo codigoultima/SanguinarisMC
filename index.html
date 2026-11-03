@@ -15,8 +15,8 @@
   <meta property="og:image:alt" content="Valle gótico bajo la luna con un castillo, pinos y tres siluetas en el camino.">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=0.10.7">
-  <script defer src="main.js?v=0.10.7"></script>
+  <link rel="stylesheet" href="styles.css?v=0.10.8">
+  <script defer src="main.js?v=0.10.8"></script>
 </head>
 <body>
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -55,7 +55,7 @@
           <a class="button button-primary" href="#mundo">Descubrir el mundo</a>
           <a class="button button-ghost" href="assets/SanguinarisMC-Dossier.pdf">Leer el dossier <span class="button-meta">PDF</span></a>
         </div>
-        <p class="hero-footnote">Versión interna 0.10.7 · Mapa actualizado para representar mejor las copas de árboles · Apertura por anunciar.</p>
+        <p class="hero-footnote">Versión interna 0.10.8 · Mapa actualizado para representar mejor las copas de árboles · Apertura por anunciar.</p>
       </div>
       <a class="scroll-cue" href="#manifiesto" aria-label="Bajar a la presentación"><span></span>Desliza</a>
     </section>
@@ -76,7 +76,7 @@
           <dl>
             <div><dt>Proyecto</dt><dd>En desarrollo</dd></div>
             <div><dt>Base jugable</dt><dd>Probada internamente</dd></div>
-            <div><dt>Versión interna</dt><dd>0.10.7</dd></div>
+            <div><dt>Versión interna</dt><dd>0.10.8</dd></div>
             <div><dt>Servidor</dt><dd>Pruebas cerradas</dd></div>
             <div><dt>Fecha pública</dt><dd>Por anunciar</dd></div>
           </dl>
@@ -190,11 +190,12 @@
         <h2>La noche cambió.<br>Esto es lo que hay de nuevo.</h2>
         <p class="section-sub">Registro de las iteraciones internas. Elige una versión en la pestaña o ciérrala cuando ya la hayas leído: lo que se añadió, lo que se ajustó y lo que se corrigió, sin detalles internos.</p>
       </div>
-      <div class="patch-panel" id="patch-panel" data-current="0.10.7">
+      <div class="patch-panel" id="patch-panel" data-current="0.10.8">
         <div class="patch-bar">
-          <p class="patch-bar-title">Notas del parche <span class="patch-current">0.10.7</span></p>
+          <p class="patch-bar-title">Notas del parche <span class="patch-current">0.10.8</span></p>
           <div class="patch-tabs" role="tablist" aria-label="Versiones del parche">
-            <button class="patch-tab" type="button" role="tab" id="tab-0-10-7" aria-controls="panel-0-10-7" aria-selected="true">0.10.7</button>
+            <button class="patch-tab" type="button" role="tab" id="tab-0-10-8" aria-controls="panel-0-10-8" aria-selected="true">0.10.8</button>
+            <button class="patch-tab" type="button" role="tab" id="tab-0-10-7" aria-controls="panel-0-10-7" aria-selected="false" tabindex="-1">0.10.7</button>
             <button class="patch-tab" type="button" role="tab" id="tab-0-10-6" aria-controls="panel-0-10-6" aria-selected="false" tabindex="-1">0.10.6</button>
             <button class="patch-tab" type="button" role="tab" id="tab-0-10-5" aria-controls="panel-0-10-5" aria-selected="false" tabindex="-1">0.10.5</button>
             <button class="patch-tab" type="button" role="tab" id="tab-0-10-4" aria-controls="panel-0-10-4" aria-selected="false" tabindex="-1">0.10.4</button>
@@ -216,6 +217,44 @@
           </button>
         </div>
         <div class="patch-body" id="patch-body">
+
+      <article class="patch-card" role="tabpanel" id="panel-0-10-8" aria-labelledby="tab-0-10-8" tabindex="0">
+        <header class="patch-head">
+          <div>
+            <p class="patch-version">Parche interno 0.10.8</p>
+            <h3>Vínculos: una presencia que camina contigo</h3>
+          </div>
+          <p class="patch-date">3 de noviembre de 2026<br>Build interna</p>
+        </header>
+        <div class="patch-grid">
+          <section class="patch-col patch-added">
+            <h4><span>Añadido</span></h4>
+            <ul>
+              <li><strong>Cinco Vínculos.</strong> Carmesí, Salvaje, Vigilante y Umbrío acompañan a cada facción; Errante está abierto a cualquiera.</li>
+              <li><strong>Menú de Vínculos.</strong> Muestra el vínculo activo, su coste y la espera antes de volver a invocarlo.</li>
+              <li><strong>126 mascotas con progresión.</strong> Cuatro niveles, comida propia y tres roles: montura, combate y compañía. Los vehículos quedaron fuera.</li>
+            </ul>
+          </section>
+          <section class="patch-col patch-changed">
+            <h4><span>Cambiado</span></h4>
+            <ul>
+              <li><strong>Invocar tiene un precio.</strong> Consume esencia de tu facción (Errante usa esencia Sanguinaris) y abre una espera de 90 segundos.</li>
+              <li><strong>El vínculo se mantiene.</strong> El efecto se renueva mientras siga activo y se recupera al volver a entrar.</li>
+            </ul>
+          </section>
+          <section class="patch-col patch-fixed">
+            <h4><span>Estado</span></h4>
+            <ul>
+              <li><strong>170 pruebas automatizadas pasan.</strong> La invocación, la espera, el disipado y el rechazo de un vínculo desconocido se comprobaron en vivo.</li>
+              <li><strong>Las mascotas necesitan MCPets y MythicMobs.</strong> La primera carga debe revisarse en el servidor de pruebas.</li>
+            </ul>
+          </section>
+        </div>
+        <div class="patch-tags">
+          <span>Vínculos</span><span>Mascotas</span><span>Progresión diaria</span><span>Persistencia</span>
+        </div>
+        <p class="patch-note">El sistema busca que cada sesión deje algo en marcha para la siguiente. El servidor sigue en pruebas cerradas.</p>
+      </article>
 
       <article class="patch-card" role="tabpanel" id="panel-0-10-7" aria-labelledby="tab-0-10-7" tabindex="0">
         <header class="patch-head">
