@@ -2,6 +2,7 @@ window.SANGUINARIS_EN = {
   text: {
     'El mundo': 'The world',
     'Facciones': 'Factions',
+    'Modo de rol': 'Roleplay',
     'Novedades': 'Patch notes',
     'Avance': "What's ready",
     'Próximamente': 'Coming soon',
@@ -11,8 +12,20 @@ window.SANGUINARIS_EN = {
       'A supernatural survival server where vampires, werewolves, hunters, witches and the Reflejos of El Espejo share a world that changes with you. It is not open to the public yet: this is a window into what we are already building.',
     'Descubrir el mundo': 'Discover the world',
     'Leer el dossier': 'Read the dossier',
-    'Versión interna 0.10.12 · Beta cerrada de 3 a 5 cupos · Español e inglés.':
-      'Internal version 0.10.12 · Closed beta with 3 to 5 slots · Spanish and English.',
+    'Versión 1.0.0 · Beta cerrada de 3 a 5 cupos · Español e inglés.':
+      'Version 1.0.0 · Closed beta with 3 to 5 slots · Spanish and English.',
+    'Versión 1.0.0': 'Version 1.0.0',
+    'Sanguinaris, listo para jugar': 'Sanguinaris, ready to play',
+    'Primera versión estable': 'First stable release',
+    'Primera versión estable de Sanguinaris para Purpur 1.21.4.': 'First stable release of Sanguinaris for Purpur 1.21.4.',
+    'Sistema de rol propio.': 'Its own roleplay system.',
+    'Habilidades con la tecla F.': 'Abilities with the F key.',
+    'HUD y menús por facción.': 'Per-faction HUD and menus.',
+    'Música ambiental con transiciones.': 'Ambient music with transitions.',
+    'Sistemas bloqueados con tutoriales.': 'Locked systems with tutorials.',
+    'Jefes y encuentros del Nether': 'Nether bosses and encounters',
+    'Texturas de forja': 'Forge textures',
+    'Corazones e inventario': 'Hearts and inventory',
     'Postular a la beta': 'Apply for the beta',
     'Desliza': 'Scroll',
 
@@ -131,6 +144,29 @@ window.SANGUINARIS_EN = {
       "Each member's contracts bring the whole faction closer to a weekly goal with milestones and a cosmetic keepsake, without inflating the economy.",
     'Probado en servidor de pruebas. El equilibrio, la escala y la experiencia pública siguen en desarrollo.':
       'Tested on a test server. Balance, scale and the public experience are still in development.',
+    'Una forma opcional de jugar': 'An optional way to play',
+    'Una mesa de rol dentro del mundo.': 'A roleplaying table inside the world.',
+    'El modo de rol ofrece herramientas opcionales para escenas y narración, sin alterar el combate, el inventario ni la progresión survival.':
+      'Roleplay offers optional tools for scenes and narration without changing combat, inventory, or survival progression.',
+    '01 · Base disponible': '01 · Available foundation',
+    'Tu personaje, tus tiradas': 'Your character, your rolls',
+    'La ficha muestra tu facción, rango, renombre, recurso y habilidades equipadas. También hay tiradas de dados, pruebas narrativas d100 con una probabilidad explícita y canales cercanos para hablar, gritar, susurrar, pensar, actuar o describir el entorno.':
+      'The character sheet shows your faction, rank, renown, resource, and equipped skills. It also offers dice rolls, d100 narrative checks with an explicit probability, and nearby channels for speech, shouting, whispering, thoughts, actions, and the environment.',
+    '02 · Tiradas narrativas': '02 · Narrative checks',
+    'Dados sin ventajas ocultas': 'Dice without hidden advantages',
+    'Los resultados ayudan a resolver escenas entre participantes que activaron el modo. No otorgan recursos, no transfieren objetos y no modifican combate ni progresión.':
+      'Results help resolve scenes among players who opted in. They do not award resources, transfer items, or change combat or progression.',
+    '03 · Inspiración, no copia': '03 · Inspired, not copied',
+    'Una capa narrativa propia': 'A narrative layer of its own',
+    'La ficha se basa en los sistemas reales de Sanguinaris: facción, rango, recurso y habilidades. Los dados sirven para narrar; no se importan clases, atributos ni progresión de otros juegos.':
+      'The sheet is based on Sanguinaris systems: faction, rank, resource, and skills. Dice support storytelling; classes, attributes, and progression from other games are not imported.',
+    '04 · Aún en construcción': '04 · Still being built',
+    'Lo que falta antes de llamarlo completo': 'What is still needed before it is complete',
+    'Una base, no un juego de mesa completo': 'A foundation, not a complete tabletop game',
+    'El sistema actual no incluye narrador automático ni una progresión de rol o misiones integradas. Su alcance es deliberadamente ligero: canales, fichas vinculadas a la facción, dados y escenas dirigidas por jugadores.':
+      'The current system has no automated narrator, roleplay progression, or integrated missions. Its scope is intentionally lightweight: channels, faction-linked character sheets, dice, and player-directed scenes.',
+    'El roleplay es opcional y no reemplaza el modo survival. Esta presentación describe la base disponible, no una experiencia completa de rol de mesa.':
+      'Roleplay is optional and does not replace survival. This page describes the available foundation, not a complete tabletop roleplaying experience.',
 
     'Notas del parche': 'Patch notes',
     'La noche cambió.': 'The night has changed.',

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 800" role="img" aria-labelledby="t d">
+  <title id="t">El Espejo</title>
+  <desc id="d">Un Reflejo sostiene una esquirla ante un umbral fracturado del Nether.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1b101c"/>
+      <stop offset=".55" stop-color="#401421"/>
+      <stop offset="1" stop-color="#09090e"/>
+    </linearGradient>
+    <radialGradient id="rift" cx="52%" cy="42%" r="58%">
+      <stop offset="0" stop-color="#c05196" stop-opacity=".46"/>
+      <stop offset=".55" stop-color="#77284f" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#77284f" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e7c6ec"/>
+      <stop offset=".42" stop-color="#a55dc0"/>
+      <stop offset="1" stop-color="#4f1d65"/>
+    </linearGradient>
+    <filter id="soft-glow">
+      <feGaussianBlur stdDeviation="13"/>
+    </filter>
+  </defs>
+  <rect width="640" height="800" fill="url(#sky)"/>
+  <ellipse cx="330" cy="370" rx="290" ry="330" fill="url(#rift)" filter="url(#soft-glow)"/>
+  <g fill="#110d16">
+    <path d="M0 620 68 500l46 48 53-154 49 99 42-168 46 86 55-146 45 102 53-79 51 115 56-55 76 101v351H0z"/>
+    <path d="M42 620 57 323l21-37 18 37 15 297zm118 40 14-360 28-54 26 54 18 360zm372-24 13-392 29-48 24 48 19 392zm-91 48 10-286 22-38 24 38 14 286z"/>
+  </g>
+  <g fill="#6e1836">
+    <path d="M0 475q52-62 106 0l-10 34H10z"/>
+    <path d="M18 500v110M43 490v104M71 492v118M94 502v105" stroke="#35111f" stroke-width="8"/>
+    <path d="M500 394q62-70 124 0l-12 38h-98z"/>
+    <path d="M515 420v112m28-119v120m30-115v130m28-118v123" stroke="#35111f" stroke-width="8"/>
+  </g>
+  <g fill="#197d81" opacity=".8">
+    <path d="M84 760v-90l-32-37 8-7 29 32 4-68 9 2-1 67 31-37 7 7-38 45v86z"/>
+    <path d="M550 770v-83l-27-32 8-7 24 27 3-59 9 2v58l25-29 7 7-32 38v78z"/>
+  </g>
+  <g fill="none" stroke="#4b2637" stroke-width="17" stroke-linejoin="round">
+    <path d="m219 620 8-302 38-105 52-43 50 44 48 100 8 306"/>
+  </g>
+  <path d="m224 617 10-297 37-99 47-40 45 40 43 97 10 299z" fill="#100c17" stroke="#c28a55" stroke-width="3" opacity=".9"/>
+  <path d="m250 601 8-271 31-78 30-28 31 29 35 78 7 270z" fill="#1e1225"/>
+  <path d="M279 559q18-104 41-155 32 58 45 155z" fill="#12222a" opacity=".85"/>
+  <circle cx="320" cy="395" r="52" fill="#d7cdbf" opacity=".82"/>
+  <path d="M272 408q47-25 95 3M284 432q36-16 71 1M302 451q18-8 36 0" fill="none" stroke="#6b506d" stroke-width="5" opacity=".75"/>
+  <g fill="none" stroke="#d3a66c" stroke-width="3" opacity=".72">
+    <path d="m220 320 24-12m-29 28 22-8m182-8 22 12m-20 19 22 8"/>
+    <path d="M274 204q46-31 93 0"/>
+  </g>
+  <g fill="#08090d">
+    <path d="M106 800q21-83 69-119l-9-67q6-39 49-46 43 7 49 46l-10 64q47 40 67 122z"/>
+    <path d="M176 642q34-30 76 0l30 56-62 29-72-29z"/>
+    <path d="M221 663q28-41 56-30l43 28-9 12-47-17-26 35z"/>
+  </g>
+  <path d="M193 657q28-20 57-3" fill="none" stroke="#c9a45c" stroke-width="5" opacity=".75"/>
+  <circle cx="222" cy="655" r="12" fill="#c9a45c"/>
+  <path d="m218 630 8-38 12 35-8 34z" fill="url(#glass)" stroke="#edc9ff" stroke-width="2"/>
+  <path d="m226 627 4-24" stroke="#fff1ff" stroke-width="2"/>
+  <g fill="#d194c9" opacity=".82">
+    <circle cx="171" cy="398" r="3"/><circle cx="470" cy="479" r="4"/>
+    <circle cx="139" cy="556" r="3"/><circle cx="445" cy="270" r="3"/>
+    <circle cx="301" cy="532" r="3"/><circle cx="386" cy="574" r="4"/>
+  </g>
+  <rect width="640" height="800" fill="none" stroke="#482537" stroke-width="2"/>
+</svg>

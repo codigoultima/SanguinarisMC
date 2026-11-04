@@ -18,9 +18,9 @@
   <meta name="twitter:image" content="https://codigoultima.github.io/SanguinarisMC/assets/social-preview.png">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=0.10.12">
-  <script defer src="i18n-en.js?v=0.10.12-r2"></script>
-  <script defer src="main.js?v=0.10.12"></script>
+  <link rel="stylesheet" href="styles.css?v=1.0.0">
+  <script defer src="i18n-en.js?v=1.0.0"></script>
+  <script defer src="main.js?v=1.0.0"></script>
 </head>
 <body>
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -34,6 +34,7 @@
     <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
       <a href="#mundo">El mundo</a>
       <a href="#facciones">Facciones</a>
+      <a href="#roleplay">Modo de rol</a>
       <a href="#novedades">Novedades</a>
       <a href="#avance">Avance</a>
       <a href="assets/SanguinarisMC-Dossier.pdf">Dossier <span class="pdf-tag">PDF</span></a>
@@ -61,7 +62,7 @@
           <a class="button button-primary" href="#mundo">Descubrir el mundo</a>
           <a class="button button-ghost" href="assets/SanguinarisMC-Dossier.pdf">Leer el dossier <span class="button-meta">PDF</span></a>
         </div>
-        <p class="hero-footnote">Versión interna 0.10.12 · Beta cerrada de 3 a 5 cupos · Español e inglés.</p>
+        <p class="hero-footnote">Versión 1.0.0 · Beta cerrada de 3 a 5 cupos · Español e inglés.</p>
       </div>
       <a class="scroll-cue" href="#manifiesto" aria-label="Bajar a la presentación"><span></span>Desliza</a>
     </section>
@@ -82,7 +83,7 @@
           <dl>
             <div><dt>Proyecto</dt><dd>En desarrollo</dd></div>
             <div><dt>Base jugable</dt><dd>Probada internamente</dd></div>
-            <div><dt>Versión interna</dt><dd>0.10.12</dd></div>
+            <div><dt>Versión interna</dt><dd>1.0.0</dd></div>
             <div><dt>Servidor</dt><dd>Beta cerrada · 3 a 5 cupos</dd></div>
             <div><dt>Idiomas</dt><dd>Español e inglés</dd></div>
             <div><dt>Fecha pública</dt><dd>Por anunciar</dd></div>
@@ -152,7 +153,7 @@
           </div>
         </article>
         <article class="faction-card reveal">
-          <div class="faction-art"><img src="assets/ui-preview/espejo-interface.png" alt="Interfaz de El Espejo con motivos magenta y fracturas geométricas."></div>
+          <div class="faction-art"><img src="assets/espejo.svg" alt="Un Reflejo sostiene una esquirla ante un umbral fracturado del Nether."></div>
           <div class="faction-body">
             <p class="faction-index">05 · El Nether como reflejo</p>
             <h3>El Espejo</h3>
@@ -204,18 +205,50 @@
       <p class="fine-print reveal">Probado en servidor de pruebas. El equilibrio, la escala y la experiencia pública siguen en desarrollo.</p>
     </section>
 
+    <section class="features section" id="roleplay">
+      <div class="section-head reveal">
+        <p class="kicker">Una forma opcional de jugar</p>
+        <h2>Una mesa de rol dentro del mundo.</h2>
+        <p class="section-sub">El modo de rol ofrece herramientas opcionales para escenas y narración, sin alterar el combate, el inventario ni la progresión survival.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature reveal">
+          <span class="feature-num">01 · Base disponible</span>
+          <h3>Tu personaje, tus tiradas</h3>
+          <p>La ficha muestra tu facción, rango, renombre, recurso y habilidades equipadas. También hay tiradas de dados, pruebas narrativas d100 con una probabilidad explícita y canales cercanos para hablar, gritar, susurrar, pensar, actuar o describir el entorno.</p>
+        </article>
+        <article class="feature reveal">
+          <span class="feature-num">02 · Tiradas narrativas</span>
+          <h3>Dados sin ventajas ocultas</h3>
+          <p>Los resultados ayudan a resolver escenas entre participantes que activaron el modo. No otorgan recursos, no transfieren objetos y no modifican combate ni progresión.</p>
+        </article>
+        <article class="feature reveal">
+          <span class="feature-num">03 · Inspiración, no copia</span>
+          <h3>Una capa narrativa propia</h3>
+          <p>La ficha se basa en los sistemas reales de Sanguinaris: facción, rango, recurso y habilidades. Los dados sirven para narrar; no se importan clases, atributos ni progresión de otros juegos.</p>
+        </article>
+        <article class="feature reveal">
+          <span class="feature-num">04 · Aún en construcción</span>
+          <h3>Una base, no un juego de mesa completo</h3>
+          <p>El sistema actual no incluye narrador automático ni una progresión de rol o misiones integradas. Su alcance es deliberadamente ligero: canales, fichas vinculadas a la facción, dados y escenas dirigidas por jugadores.</p>
+        </article>
+      </div>
+      <p class="fine-print reveal">El roleplay es opcional y no reemplaza el modo survival. Esta presentación describe la base disponible, no una experiencia completa de rol de mesa.</p>
+    </section>
+
     <section class="patch section" id="novedades">
       <div class="section-head reveal">
         <p class="kicker">Notas del parche</p>
         <h2>La noche cambió.<br>Esto es lo que hay de nuevo.</h2>
         <p class="section-sub">Registro de las iteraciones internas para Minecraft 1.21.4. Elige una versión en la pestaña o ciérrala cuando ya la hayas leído: lo que se añadió, lo que se ajustó y lo que se corrigió, sin detalles internos.</p>
       </div>
-      <div class="patch-panel" id="patch-panel" data-current="0.10.12">
+      <div class="patch-panel" id="patch-panel" data-current="1.0.0">
         <div class="patch-bar">
-          <p class="patch-bar-title">Notas del parche <span class="patch-current">0.10.12</span></p>
+          <p class="patch-bar-title">Notas del parche <span class="patch-current">1.0.0</span></p>
           <p class="patch-lang-note" hidden>Las notas anteriores a 0.10.8 se conservan en español.</p>
           <div class="patch-tabs" role="tablist" aria-label="Versiones del parche">
-            <button class="patch-tab" type="button" role="tab" id="tab-0-10-12" aria-controls="panel-0-10-12" aria-selected="true">0.10.12</button>
+            <button class="patch-tab" type="button" role="tab" id="tab-1-0-0" aria-controls="panel-1-0-0" aria-selected="true">1.0.0</button>
+            <button class="patch-tab" type="button" role="tab" id="tab-0-10-12" aria-controls="panel-0-10-12" aria-selected="false" tabindex="-1">0.10.12</button>
             <button class="patch-tab" type="button" role="tab" id="tab-0-10-11" aria-controls="panel-0-10-11" aria-selected="false" tabindex="-1">0.10.11</button>
             <button class="patch-tab" type="button" role="tab" id="tab-0-10-10" aria-controls="panel-0-10-10" aria-selected="false" tabindex="-1">0.10.10</button>
             <button class="patch-tab" type="button" role="tab" id="tab-0-10-9" aria-controls="panel-0-10-9" aria-selected="false" tabindex="-1">0.10.9</button>
@@ -243,7 +276,49 @@
         </div>
         <div class="patch-body" id="patch-body">
 
-      <article class="patch-card" role="tabpanel" id="panel-0-10-12" aria-labelledby="tab-0-10-12" tabindex="0">
+      <article class="patch-card" role="tabpanel" id="panel-1-0-0" aria-labelledby="tab-1-0-0" tabindex="0">
+        <header class="patch-head">
+          <div>
+            <p class="patch-version">Versión 1.0.0</p>
+            <h3>Sanguinaris, listo para jugar</h3>
+          </div>
+          <p class="patch-date">Primera versión estable</p>
+        </header>
+        <div class="patch-grid">
+          <section class="patch-col patch-added">
+            <h4><span>Añadido</span></h4>
+            <ul>
+              <li><strong>Sistema de rol propio.</strong> Presentación de personaje, linaje y decisiones adaptadas a cada facción, con su lore y sus recursos.</li>
+              <li><strong>Habilidades con la tecla F.</strong> Pulsa F para activar el modo habilidades y usa 1-5; cada facción tiene su firma visual.</li>
+              <li><strong>HUD y menús por facción.</strong> Interfaz, corazones, inventario y barras con la identidad de cada una de las cinco facciones.</li>
+              <li><strong>Música ambiental con transiciones.</strong> Ancestry suena de fondo, suave, y pasa al tema de combate y de vuelta con fundidos.</li>
+              <li><strong>Sistemas bloqueados con tutoriales.</strong> Lo avanzado se desbloquea por rango y se explica al abrirlo.</li>
+            </ul>
+          </section>
+          <section class="patch-col patch-changed">
+            <h4><span>Ajustado</span></h4>
+            <ul>
+              <li><strong>Los iconos de habilidad reemplazan los slots del HUD</strong>, con indicador del número de slot y recarga visible.</li>
+              <li><strong>Música más natural:</strong> entrada y salida graduales, duración limitada y sin repeticiones seguidas.</li>
+              <li><strong>Paquetes de recursos de las siete variantes</strong> regenerados para esta versión.</li>
+            </ul>
+          </section>
+          <section class="patch-col patch-fixed">
+            <h4><span>Corregido</span></h4>
+            <ul>
+              <li><strong>Jefes y encuentros del Nether</strong> ya no aparecen en el Overworld.</li>
+              <li><strong>Corazones e inventario</strong> con la textura correcta; cuadrados "□" en scoreboard, tab y menús eliminados.</li>
+              <li><strong>Texturas de forja</strong> de armas, armaduras y reliquias verificadas en todos los paquetes.</li>
+            </ul>
+          </section>
+        </div>
+        <div class="patch-tags">
+          <span>Rol</span><span>Tecla F</span><span>HUD</span><span>Música</span><span>El Espejo</span>
+        </div>
+        <p class="patch-note">Primera versión estable de Sanguinaris para Purpur 1.21.4.</p>
+      </article>
+
+      <article class="patch-card" role="tabpanel" id="panel-0-10-12" aria-labelledby="tab-0-10-12" tabindex="0" hidden>
         <header class="patch-head">
           <div>
             <p class="patch-version">Parche interno 0.10.12</p>
@@ -287,7 +362,7 @@
             <p class="patch-version">Parche interno 0.10.11</p>
             <h3>La noche empieza a reflejarse</h3>
           </div>
-          <p class="patch-date">Iteración interna<br>Build de desarrollo</p>
+          <p class="patch-date">Iteración interna · Build de desarrollo</p>
         </header>
         <div class="patch-grid">
           <section class="patch-col patch-added">
@@ -465,37 +540,37 @@
           <figure>
             <figcaption>Vampiros</figcaption>
             <img src="assets/ui-preview/vampiro-interface.png" alt="Inventario, hotbar, corazones, hambre, armadura y experiencia en tonos carmesí." loading="lazy">
-            <a href="assets/Sanguinaris-Resource-Pack-0.10.12-vampiro.zip" download>Descargar paquete de Vampiros</a>
+            <a href="assets/Sanguinaris-Resource-Pack-1.0.0-vampiro.zip" download>Descargar paquete de Vampiros</a>
           </figure>
           <figure>
             <figcaption>Hombres lobo</figcaption>
             <img src="assets/ui-preview/hombre_lobo-interface.png" alt="Interfaz completa de Hombres lobo en tonos azul lunar." loading="lazy">
-            <a href="assets/Sanguinaris-Resource-Pack-0.10.12-hombre_lobo.zip" download>Descargar paquete de Hombres lobo</a>
+            <a href="assets/Sanguinaris-Resource-Pack-1.0.0-hombre_lobo.zip" download>Descargar paquete de Hombres lobo</a>
           </figure>
           <figure>
             <figcaption>Cazadores</figcaption>
             <img src="assets/ui-preview/cazador-interface.png" alt="Interfaz completa de Cazadores en tonos dorados." loading="lazy">
-            <a href="assets/Sanguinaris-Resource-Pack-0.10.12-cazador.zip" download>Descargar paquete de Cazadores</a>
+            <a href="assets/Sanguinaris-Resource-Pack-1.0.0-cazador.zip" download>Descargar paquete de Cazadores</a>
           </figure>
           <figure>
             <figcaption>Brujos</figcaption>
             <img src="assets/ui-preview/brujo-interface.png" alt="Interfaz completa de Brujos en tonos violetas." loading="lazy">
-            <a href="assets/Sanguinaris-Resource-Pack-0.10.12-brujo.zip" download>Descargar paquete de Brujos</a>
+            <a href="assets/Sanguinaris-Resource-Pack-1.0.0-brujo.zip" download>Descargar paquete de Brujos</a>
           </figure>
           <figure>
             <figcaption>Miasma</figcaption>
             <img src="assets/ui-preview/miasma-interface.png" alt="Interfaz completa de Miasma en tonos verdes." loading="lazy">
-            <a href="assets/Sanguinaris-Resource-Pack-0.10.12-miasma.zip" download>Descargar paquete de Miasma</a>
+            <a href="assets/Sanguinaris-Resource-Pack-1.0.0-miasma.zip" download>Descargar paquete de Miasma</a>
           </figure>
           <figure>
             <figcaption>El Espejo</figcaption>
             <img src="assets/ui-preview/espejo-interface.png" alt="Interfaz de El Espejo en tonos magenta y negro." loading="lazy">
-            <a href="assets/Sanguinaris-Resource-Pack-0.10.12-espejo.zip" download>Descargar paquete de El Espejo</a>
+            <a href="assets/Sanguinaris-Resource-Pack-1.0.0-espejo.zip" download>Descargar paquete de El Espejo</a>
           </figure>
           <figure>
             <figcaption>Neutral</figcaption>
             <img src="assets/ui-preview/neutral-interface.png" alt="Interfaz neutral de Sanguinaris." loading="lazy">
-            <a href="assets/Sanguinaris-Resource-Pack-0.10.12-neutral.zip" download>Descargar paquete neutral</a>
+            <a href="assets/Sanguinaris-Resource-Pack-1.0.0-neutral.zip" download>Descargar paquete neutral</a>
           </figure>
         </div>
         <p class="patch-note">Los sprites reemplazables conservan su posición vanilla; Paper no puede mover la HUD ni el chat. El número de nivel es texto y no tiene una textura independiente. Los packs son opcionales y también incluyen Miasma y una variante neutral.</p>
