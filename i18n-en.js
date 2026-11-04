@@ -281,6 +281,7 @@ window.SANGUINARIS_EN = {
     'Recarga en caliente': 'Hot reload',
     'El servidor sigue en pruebas cerradas. Las notas anteriores a 0.10.8 se conservan en español.':
       'The server remains in closed tests. Notes before 0.10.8 are archived in Spanish.',
+    'Minimapa': 'Minimap',
 
     'Cinco Vínculos.': 'Five Bonds.',
     'Carmesí, Salvaje, Vigilante y Umbrío acompañan a cada facción; Errante está abierto a cualquiera.':
