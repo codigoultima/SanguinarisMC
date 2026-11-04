@@ -141,6 +141,7 @@ window.SANGUINARIS_EN = {
     'Ocultar notas': 'Hide notes',
     'Ver notas': 'Show notes',
     'Añadido': 'Added',
+    'Ajustado': 'Adjusted',
     'Cambiado': 'Changed',
     'Corregido': 'Fixed',
     'Estado': 'Status',
@@ -149,6 +150,10 @@ window.SANGUINARIS_EN = {
     'El Espejo abre un umbral': 'El Espejo opens a threshold',
     '4 de noviembre de 2026': 'November 4, 2026',
     'Build interna': 'Internal build',
+    'El Espejo ya es una quinta facción jugable en fase base.':
+      'El Espejo is now a playable fifth faction in its foundational phase.',
+    'Los Reflejos tienen recurso, habilidades, objetos, identidad visual y una incursión temporal al Nether con límite semanal; aún no es una facción completa.':
+      'The Reflejos have a resource, skills, items, visual identity and a weekly-limited temporary Nether incursion; the faction is still incomplete.',
     'Variantes de resource pack para siete perfiles.': 'Resource-pack variants for seven profiles.',
     'Se regeneraron y empaquetaron las cinco facciones jugables, Miasma y la variante neutral, con modelos y texturas propios.':
       'The five playable factions, Miasma and the neutral variant were regenerated and packaged with their own models and textures.',
@@ -169,8 +174,12 @@ window.SANGUINARIS_EN = {
     'HUD y música necesitan todavía una sesión de juego; el balance económico requiere datos de una prueba jugada.':
       'The HUD and music still need an in-game session; economy balance requires data from a playtest.',
     'Incursiones Nether': 'Nether incursions',
+    'Música de combate': 'Combat music',
+    'Localización': 'Localization',
     'La base de El Espejo está incompleta y no debe presentarse como contenido final.':
       'El Espejo’s foundation is incomplete and should not be presented as final content.',
+    'Build interna para pruebas. La base de El Espejo está incompleta y no debe presentarse como contenido final.':
+      'Internal test build. El Espejo’s foundation is incomplete and should not be presented as final content.',
     'Parche interno 0.10.11': 'Internal patch 0.10.11',
     'La noche empieza a reflejarse': 'The night begins to reflect',
     'Iteración interna': 'Internal iteration',
