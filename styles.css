@@ -160,6 +160,41 @@ p { margin: 0 0 1.15em; }
 }
 .header-cta:hover { background: var(--gold); color: #120d08; }
 
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding: 3px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(7, 8, 13, 0.55);
+}
+.lang-btn {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: var(--muted, #9a97a8);
+  font: inherit;
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  padding: 0.32rem 0.55rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+.lang-btn:hover { color: var(--cream, #f2eee7); }
+.lang-btn.is-active { background: rgba(201, 164, 92, 0.18); color: var(--gold, #c9a45c); }
+.lang-btn:focus-visible { outline: 2px solid var(--gold, #c9a45c); outline-offset: 2px; }
+
+.patch-lang-note {
+  margin: 0;
+  flex: 1 0 100%;
+  font-size: 0.72rem;
+  letter-spacing: 0.02em;
+  color: var(--muted, #9a97a8);
+}
+.patch-lang-note[hidden] { display: none; }
+
 .menu-toggle {
   display: none;
   margin-left: auto;
@@ -186,13 +221,17 @@ p { margin: 0 0 1.15em; }
   align-items: flex-end;
   padding: 8rem clamp(1.2rem, 5vw, 4.5rem) 5.5rem;
   isolation: isolate;
+  overflow: hidden;
 }
 .hero-art, .hero-shade { position: absolute; inset: 0; z-index: -2; }
-.hero-art img { width: 100%; height: 100%; object-fit: cover; object-position: center 42%; }
+.hero-art {
+  background: url("assets/social-preview.png") center 55% / cover no-repeat;
+  overflow: hidden;
+}
 .hero-shade {
   z-index: -1;
   background:
-    linear-gradient(180deg, rgba(5, 6, 10, 0.55) 0%, rgba(5, 6, 10, 0.08) 35%, rgba(5, 6, 10, 0.72) 78%, #07070b 100%),
+    linear-gradient(180deg, rgba(5, 6, 10, 0.55) 0%, rgba(5, 6, 10, 0.08) 35%, rgba(5, 6, 10, 0.74) 70%, #07070b 92%, #07070b 100%),
     linear-gradient(90deg, rgba(5, 6, 10, 0.82) 0%, transparent 58%);
 }
 .hero-content { max-width: 880px; }
@@ -510,39 +549,6 @@ p { margin: 0 0 1.15em; }
   border: 1px solid rgba(201, 164, 92, 0.23);
   background: rgba(3, 5, 8, 0.9);
 }
-.interface-preview {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.8rem;
-  margin-top: 1.8rem;
-}
-.interface-preview figure {
-  min-width: 0;
-  margin: 0;
-  padding: 0.8rem;
-  border: 1px solid var(--line);
-  background: rgba(8, 10, 15, 0.62);
-}
-.interface-preview figcaption {
-  margin-bottom: 0.65rem;
-  color: var(--cream-dim);
-  font-size: 0.72rem;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-}
-.interface-preview img {
-  display: block;
-  width: 100%;
-  height: auto;
-  image-rendering: pixelated;
-  border: 1px solid rgba(201, 164, 92, 0.23);
-}
-.interface-preview a {
-  display: inline-block;
-  margin-top: 0.7rem;
-  color: var(--cream-dim);
-  font-size: 0.75rem;
-}
 .patch-note { margin: 1.5rem 0 0; color: rgba(239, 231, 214, 0.45); font-size: 0.76rem; }
 
 .patch-panel { border: 1px solid var(--line); background: rgba(8, 10, 15, 0.5); }
@@ -657,6 +663,29 @@ p { margin: 0 0 1.15em; }
 .soon-inner > p:not(.kicker):not(.soon-word):not(.soon-note) { color: var(--muted); max-width: 640px; }
 .soon-actions { margin-top: 1.8rem; }
 .soon-note { margin: 2rem 0 0; color: rgba(239, 231, 214, 0.45); font-size: 0.72rem; max-width: 620px; }
+.soon-facts {
+  margin: 1.4rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.5rem;
+  max-width: 640px;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+.soon-facts li { position: relative; padding-left: 1.1rem; }
+.soon-facts li::before {
+  content: "";
+  position: absolute;
+  left: 0.15rem;
+  top: 0.68em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--gold);
+}
+.soon-contact { margin: 1.4rem 0 0; }
+.soon-contact strong { color: var(--cream); font-weight: 600; }
 
 .site-footer {
   border-top: 1px solid var(--line);
@@ -730,7 +759,6 @@ p { margin: 0 0 1.15em; }
 @media (max-width: 560px) {
   .faction-grid { grid-template-columns: 1fr; max-width: 620px; }
   .texture-preview { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .interface-preview { grid-template-columns: 1fr; }
 }
 
 @media (prefers-reduced-motion: reduce) {
