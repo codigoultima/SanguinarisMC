@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SanguinarisMC — servidor de Minecraft</title>
+  <meta name="description" content="SanguinarisMC, un servidor de Minecraft con vampiros, hombres lobo, cazadores, brujos y el Espejo, más vehículos, tarot, jefes, alas y minijuegos. Beta cerrada de 3 a 5 personas.">
+  <meta name="theme-color" content="#0b0d1a">
+  <link rel="canonical" href="__DOMINIO__/">
+  <meta property="og:title" content="SanguinarisMC — servidor de Minecraft">
+  <meta property="og:description" content="Cinco facciones, vehículos, tarot, jefes, alas y minijuegos en un servidor de Minecraft. Beta cerrada de 3 a 5 personas.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="__DOMINIO__/">
+  <meta property="og:image" content="__DOMINIO__/assets/social-preview.png">
+  <meta property="og:image:alt" content="Valle de noche con un castillo, pinos, una luna llena y cuatro siluetas en el camino, dibujado en píxeles.">
+  <meta property="og:image:width" content="1920">
+  <meta property="og:image:height" content="1008">
+  <meta name="twitter:image" content="__DOMINIO__/assets/social-preview.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/im-fell-english-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/newsreader-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css?v=1.4.0">
+  <script defer src="i18n-en.js?v=1.4.0"></script>
+  <script defer src="main.js?v=1.4.0"></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header wrap" id="top">
+    <a class="brand" href="#top" aria-label="SanguinarisMC, ir al inicio">
+      <img src="assets/favicon.svg" alt="" width="22" height="22">
+      <span class="brand-text">Sanguinaris<span>MC</span></span>
+    </a>
+    <div class="header-right">
+      <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
+        <a href="#facciones">Facciones</a>
+        <a href="#servidor">Más del servidor</a>
+        <a href="#hora-del-te">Hora del Té</a>
+        <a href="#galeria" data-nav-media>Galería</a>
+        <a href="#novedades">Novedades</a>
+        <a href="#diarios">Diarios</a>
+        <a href="#pronto">Postular a la beta</a>
+      </nav>
+      <div class="lang-switch" role="group" aria-label="Idioma / Language">
+        <button class="lang-btn is-active" type="button" data-lang="es" aria-pressed="true">ES</button>
+        <button class="lang-btn" type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-art"><img src="assets/hero-valle.webp" alt="Valle de noche con un castillo, pinos, una luna llena y cuatro siluetas en el camino, dibujado en píxeles." width="1920" height="1080" fetchpriority="high"></div>
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-inner wrap">
+        <div class="hero-copy">
+          <p class="meta">Minecraft Java 1.21.4, sin Forge ni Fabric</p>
+          <h1 id="hero-title">SanguinarisMC</h1>
+          <p class="hero-lead">Un servidor de Minecraft con vampiros, hombres lobo, cazadores, brujos y los Reflejos del Espejo.</p>
+          <p>Está en pruebas cerradas, con tres a cinco cupos, y lo levanto cuando puedo.</p>
+          <p class="hero-links"><a class="btn" href="#pronto">Cómo entrar a la beta</a><a href="#diarios">Leer los diarios</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap" id="manifiesto">
+      <h2>Sobre el servidor</h2>
+      <div class="manifest-body">      <p class="lead">Empecé en enero de 2025 con una idea simple: que la noche de Minecraft sirviera para algo más que esperar a que amanezca. Cinco facciones, cada una con su recurso, sus habilidades y sus problemas.</p>
+      <p>Con el tiempo se sumó lo que no cabe en una facción: vehículos que armas con bloques, máquinas, un tarot que cobra lo que promete, jefes hechos dentro del juego, alas y minijuegos que se juegan a cierta hora.</p>
+      <p>No hay tienda ni fecha de salida. Acá está lo que ya se puede jugar en el servidor de pruebas, y nada más. La última actualización trajo la quinta facción.</p>
+      <p>Avanza cuando hay tiempo.</p>
+      <dl class="facts">
+        <dt>Proyecto</dt><dd>En desarrollo</dd>
+        <dt>Base jugable</dt><dd>Probada internamente</dd>
+        <dt>Versión</dt><dd>1.21.4, Java, sin Forge ni Fabric</dd>
+        <dt>Servidor</dt><dd>Beta cerrada, 3 a 5 cupos</dd>
+        <dt>Idiomas</dt><dd>Español e inglés</dd>
+        <dt>Fecha pública</dt><dd>Sin anunciar</dd>
+      </dl>
+      <p class="small">El servidor está en Chile y lo prendo cuando puedo. Si juegas desde lejos el ping se va a notar, y no está encendido todo el día.</p>
+    
+      </div>
+    </section>
+
+    <section class="section wrap" id="facciones">
+      <h2>Un vampiro y un brujo no juntan lo mismo.</h2>
+      <p class="section-sub">Cambia el recurso que juntas, las habilidades y cómo te mueves.</p>
+      <div class="factions">
+        <article class="faction">
+          <img class="faction-mark" src="assets/vampire.png" alt="Dos colmillos de los que cae una gota de sangre, en píxeles." width="336" height="416" loading="lazy">
+          <div>
+            <h3>Vampiros</h3>
+            <p>De noche son otra cosa y la sangre es el combustible. Si bebes te sobra poder; si no, se te va apagando todo. La Casa anota cada trago.</p>
+            <ul>
+              <li>Aura de oscuridad que pega más fuerte contra rangos menores.</li>
+              <li>Visión nocturna, caída segura y vuelo de murciélago.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="faction">
+          <img class="faction-mark" src="assets/werewolf.png" alt="Luna menguante sobre pinos y huellas en la nieve, en píxeles." width="336" height="416" loading="lazy">
+          <div>
+            <h3>Hombres lobo</h3>
+            <p>La transformación va por rango, no por luna llena. Cuando cambias dejas el equipo en el suelo y peleas con lo puesto, así que conviene elegir el momento.</p>
+            <ul>
+              <li>Cambias de forma al subir de rango. Las cacerías se hacen en manada.</li>
+              <li>Corres más y pegas más fuerte cuando estás herido.</li>
+              <li>Las caídas no te matan.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="faction">
+          <img class="faction-mark" src="assets/hunter.png" alt="Estaca clavada en la tierra y una cruz dorada, en píxeles." width="336" height="416" loading="lazy">
+          <div>
+            <h3>Cazadores</h3>
+            <p>Son pocos y trabajan por sobre: un encargo, una moneda con agujero y ningún nombre de cliente. Los sellos les muestran lo que se esconde. Del Cierre no se sale por la puerta.</p>
+            <ul>
+              <li>Sellos que detectan lo que se esconde y un aura que aguanta más.</li>
+              <li>Contratos, investigación y gente que sabe dónde estás.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="faction">
+          <img class="faction-mark" src="assets/brujo.png" alt="Pentagrama trazado a tiza con dos velas, en píxeles." width="336" height="416" loading="lazy">
+          <div>
+            <h3>Brujos</h3>
+            <p>Todo lo hacen por ciclos. De noche concentran mejor, y cada rito cobra algo, no siempre sangre. Si sueltas la magia en el momento justo, pegas fuerte.</p>
+            <ul>
+              <li>Concentración arcana que sube cuando cae el sol.</li>
+              <li>Magia ritual, hechicería y equipo hecho para ellos.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="faction">
+          <img class="faction-mark" src="assets/espejo.png" alt="Portal del Nether con marco de obsidiana sobre roca roja y chispas moradas, en píxeles." width="336" height="416" loading="lazy">
+          <div>
+            <h3>El Espejo</h3>
+            <p>Viven en el Nether y se traen el Nether con ellos: su ancla convierte el terreno de alrededor en bosque carmesí. Tienen poco tiempo fuera de casa y lo pagan caro.</p>
+            <ul>
+              <li>Tres horas por semana en el Overworld, contadas solo fuera de su propia zona.</li>
+              <li>Si sueltan el ancla, la zona se libera y el terreno vuelve a como estaba.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+      <p class="owner-note">“Y bueno, ¿qué esperas para tener tu bando? XD” <span class="owner-sign">Blanca Da Vita, owner</span></p>
+    </section>
+
+
+    <section class="section wrap" id="servidor">
+      <h2>Lo que hay además de las facciones.</h2>
+      <p class="section-sub">Cada una vive en su propio plugin, hecho para este servidor.</p>
+      <div class="systems">
+        <article class="system">
+          <h3>Vehículos y máquinas</h3>
+          <div>
+            <p>Armas un dirigible, un helicóptero, un barco o una criatura con bloques y lo pilotas desde dentro. Las hélices giran alrededor de su eje y dan el empuje. El dirigible flota solo, pero para avanzar necesita un motor a bordo. Solo el dueño y los co-dueños lo mueven.</p>
+            <p>Las máquinas hacen las piezas: placas, engranajes, cables, circuitos. Se alimentan con vapor, lava o redstone y se conectan entre sí. También hay una grúa, un gancho para mover vehículos y camuflaje de bloques.</p>
+          </div>
+        </article>
+        <article class="system">
+          <h3>Tarot</h3>
+          <div>
+            <p>Un mazo de 78 cartas, con las 22 mayores y las 56 menores, derechas e invertidas. Pones una mesa con dos bloques, haces una pregunta y eliges una tirada de una, tres o cinco cartas.</p>
+            <p>Cada carta tiene un poder, con consecuencias buenas o malas, y consultar se paga.</p>
+          </div>
+        </article>
+        <article class="system">
+          <h3>Jefes, mazmorras y alas</h3>
+          <div>
+            <p>Las criaturas, los jefes, las armas y los objetos se hacen dentro del juego, así que van cambiando. Hay mazmorras por grupo y portales de Invasión que aparecen cada cierto tiempo y se pueden cruzar o destruir.</p>
+            <p>Las alas dan vuelo de verdad: dieciocho estilos y cinco niveles, del planeo corto al vuelo con picado. Todas se ven igual en todos los niveles; lo que cambia es lo que puedes hacer con ellas.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section wrap" id="hora-del-te">
+      <h2>A la hora del té se juega.</h2>
+      <p class="lead">Es una ventana de tiempo en la que el servidor abre cinco minijuegos. Se vota cuál jugar, la partida dura entre cinco y quince minutos y al final se reparten premios.</p>
+      <p>Los premios son cartas ocultas para elegir, una buena, una decente y una mala, además de títulos y logros. Se dan solo en la Hora del Té. Fuera de ella se pueden jugar partidas libres, sin premios, en una copia del mundo que se borra al terminar.</p>
+      <ul class="games">
+        <li><strong>Defensa de la brecha</strong> Cooperativo: oleadas y un jefe.</li>
+        <li><strong>Vampiros contra cazadores</strong> Dos bandos, con las habilidades de Sanguinaris.</li>
+        <li><strong>Búsqueda de arcanos</strong> Cartas del tarot escondidas por la arena.</li>
+        <li><strong>Parkour con alas</strong> Todos con alas de nivel V mientras dura.</li>
+        <li><strong>La cobranza</strong> Un cobrador contra hasta cuatro anotados.</li>
+      </ul>
+      <p>Dentro de un minijuego no entra nada de afuera. Tu inventario queda guardado aparte y te lo devuelven al salir. En los que no son de combate pasas a modo aventura, con solo lo del minijuego y sin habilidades de facción. La Defensa de la brecha y los Vampiros sí son de combate: ahí juegas con tus cosas.</p>
+      <div class="cobranza">
+        <h3>La cobranza</h3>
+        <p>La Casa manda a un cobrador a una noche de cuentas. Los anotados tachan fojas de su propia lista hasta que se abre la puerta vieja y salen. El cobrador cobra lo que otro dijo que se debía. Hay postigos para saltar, cuarterones para dejar caer, y cada personaje trae su arma o su herramienta.</p>
+        <dl class="cast">
+          <dt>La Corsaria</dt><dd>Shroud, capitana temida en todos los puertos. Su primera tripulación se amotinó en la Calma de los treinta días y de esa noche le quedó una cojera. Se lanza hacia delante con el sable.</dd>
+          <dt>El Farmacéutico</dt><dd>Factor de la Casa. Dice que no cobra a nadie, que cobra la Casa por él. Marca el suelo con frascos.</dd>
+          <dt>La Mujer de Anselmo</dt><dd>Estaba en la lista del invierno de 1422 y en el cuaderno quedó sin nombre. Se vuelve invisible unos segundos.</dd>
+          <dt>El Campanero</dt><dd>La campana de la capilla vieja suena a las tres desde que le sacaron el badajo. Marca a quien corre o trabaja cerca.</dd>
+        </dl>
+        <p>Los anotados son seis: El Testigo, El Escribano, Ortiz, Maria Strad, Cassandra y Marco Santino. Cada uno tiene su habilidad y su herramienta. El Testigo fue el único de la primera tripulación de la Corsaria que bajó el cuchillo.</p>
+        <p>Cada partida deja una historia escrita con lo que pasó. Solo la leen quienes la jugaron, que pueden compartirla o venderla.</p>
+      </div>
+    </section>
+
+    <section class="section wrap" id="galeria">
+      <h2>Capturas y videos del servidor.</h2>
+      <p class="section-sub">Tal como se ve hoy.</p>
+      <div class="media-group">
+        <h3>El valle y las facciones</h3>
+        <div class="media-grid">
+          <figure class="media-slot" data-slot="paisaje-valle" data-kind="img">
+            <div class="media-ph"><span class="ph-name">El valle de noche</span><span class="ph-hint">Imagen 1920×1080, PNG o JPG</span></div>
+          </figure>
+          <figure class="media-slot" data-slot="facciones-vampiros" data-kind="img">
+            <div class="media-ph"><span class="ph-name">Vampiros en juego</span><span class="ph-hint">Imagen 1920×1080, PNG o JPG</span></div>
+          </figure>
+          <figure class="media-slot" data-slot="facciones-lobos" data-kind="img">
+            <div class="media-ph"><span class="ph-name">Hombres lobo en juego</span><span class="ph-hint">Imagen 1920×1080, PNG o JPG</span></div>
+          </figure>
+          <figure class="media-slot" data-slot="facciones-cazadores" data-kind="img">
+            <div class="media-ph"><span class="ph-name">Cazadores en juego</span><span class="ph-hint">Imagen 1920×1080, PNG o JPG</span></div>
+          </figure>
+          <figure class="media-slot" data-slot="facciones-brujos" data-kind="img">
+            <div class="media-ph"><span class="ph-name">Brujos en juego</span><span class="ph-hint">Imagen 1920×1080, PNG o JPG</span></div>
+          </figure>
+          <figure class="media-slot" data-slot="facciones-espejo" data-kind="img">
+            <div class="media-ph"><span class="ph-name">El Espejo en juego</span><span class="ph-hint">Imagen 1920×1080, PNG o JPG</span></div>
+          </figure>
+          <figure class="media-slot" data-slot="interfaz-facciones" data-kind="img">
+            <div class="media-ph"><span class="ph-name">Interfaz de una facción</span><span class="ph-hint">Imagen, PNG</span></div>
+          </figure>
+        </div>
+      </div>
+      <div class="media-group">
+        <h3>Vehículos y máquinas</h3>
+        <div class="media-grid">
+          <figure class="media-slot" data-slot="vehiculo-dirigible" data-kind="img">
+            <div class="media-ph"><span class="ph-name">Un dirigible</span><span class="ph-hint">Imagen 1920×1080, PNG o JPG</span></div>
+          </figure>
+          <figure class="media-slot" data-slot="vehiculo-helicoptero" data-kind="img">
+            <div class="media-ph"><span class="ph-name">Un helicóptero</span><span class="ph-hint">Imagen 1920×1080, PNG o JPG</span></div>
+          </figure>
+          <figure class="media-slot" data-slot="maquinas" data-kind="img">
+            <div class="media-ph"><span class="ph-name">Máquinas en marcha</span><span class="ph-hint">Imagen 1920×1080, PNG o JPG</span></div>
+          </figure>
+          <figure class="media-slot" data-slot="video-vuelo" data-kind="video">
+            <div class="media-ph"><span class="ph-name">Vuelo de un vehículo</span><span class="ph-hint">Video MP4 (H.264), hasta 60 s</span></div>
+          </figure>
+        </div>
+      </div>
+      <div class="media-group">
+        <h3>Tarot, jefes y alas</h3>
+        <div class="media-grid">
+          <figure class="media-slot" data-slot="tarot-mesa" data-kind="img">
+            <div class="media-ph"><span class="ph-name">Una tirada sobre la mesa</span><span class="ph-hint">Imagen 1920×1080, PNG o JPG</span></div>
+          </figure>
+          <figure class="media-slot" data-slot="jefe" data-kind="img">
+            <div class="media-ph"><span class="ph-name">Un jefe</span><span class="ph-hint">Imagen 1920×1080, PNG o JPG</span></div>
+          </figure>
+          <figure class="media-slot" data-slot="alas" data-kind="img">
+            <div class="media-ph"><span class="ph-name">Alas puestas</span><span class="ph-hint">Imagen 1920×1080, PNG o JPG</span></div>
+          </figure>
+          <figure class="media-slot" data-slot="video-jefe" data-kind="video">
+            <div class="media-ph"><span class="ph-name">Pelea contra un jefe</span><span class="ph-hint">Video MP4 (H.264), hasta 60 s</span></div>
+          </figure>
+        </div>
+      </div>
+      <div class="media-group">
+        <h3>La Hora del Té</h3>
+        <div class="media-grid">
+          <figure class="media-slot" data-slot="cobranza-partida" data-kind="img">
+            <div class="media-ph"><span class="ph-name">Una partida de La cobranza</span><span class="ph-hint">Imagen 1920×1080, PNG o JPG</span></div>
+          </figure>
+          <figure class="media-slot" data-slot="minijuego-otro" data-kind="img">
+            <div class="media-ph"><span class="ph-name">Otro minijuego</span><span class="ph-hint">Imagen 1920×1080, PNG o JPG</span></div>
+          </figure>
+          <figure class="media-slot" data-slot="video-cobranza" data-kind="video">
+            <div class="media-ph"><span class="ph-name">Una partida completa</span><span class="ph-hint">Video MP4 (H.264), hasta 60 s</span></div>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap" id="novedades">
+      <h2>El Espejo, el mapa y la música de jefe.</h2>
+      <article class="release">
+        <p class="release-meta">Actualización del 5 de noviembre de 2026</p>
+        <h3>Entra El Espejo</h3>
+        <p class="release-intro">La quinta facción vive en el Nether y se lleva el Nether consigo. Con ella llegaron el mapa, la música de jefe, el modo de rol y los textos que faltaban en inglés.</p>
+        <h4>Entró</h4>
+        <ul>
+          <li>El Espejo: al entrar te manda al Nether y tu ancla convierte el terreno de alrededor en bosque carmesí.</li>
+          <li>Tres horas semanales en el Overworld para los Reflejos; siete en el Nether para las otras cuatro facciones.</li>
+          <li>Seis habilidades del Espejo, tres nuevas: Brasa Refractada, Manto de Obsidiana y Ruptura del Prisma.</li>
+          <li>Forja completa: esencia, set de cuatro piezas, seis armas, ocho piezas de armadura y una reliquia.</li>
+          <li>Encuentros del Nether con el Heraldo del Cristal Roto y hasta dos centinelas de blaze, según el bioma.</li>
+          <li>Modo de rol opcional desde la brújula: hablar, gritar, susurrar, pensar, actuar y tirar dados.</li>
+        </ul>
+        <h4>Cambió</h4>
+        <ul>
+          <li>El modo de habilidades se prende con F y se lanza con 1 a 5. Cada habilidad tiene su icono en el HUD.</li>
+          <li>El mapa marca territorio, jugadores, criaturas y puntos propios con <code>/sang mapa marcar</code>.</li>
+          <li>La música de jefe corta la de combate, y fuera de pelea vuelve un ambiente suave.</li>
+          <li>Casi todo el plugin está en español e inglés: menús, contratos, tiendas, forja, rutas y diálogos.</li>
+          <li>Las zonas del Espejo y los territorios de facción ya no se pueden superponer.</li>
+        </ul>
+        <h4>Arreglado</h4>
+        <ul>
+          <li>Los medios corazones del HUD ya no dejan un cuadro opaco encima.</li>
+          <li>La música de jefe no se queda pegada al morir, cambiar de mundo o desconectarse.</li>
+          <li>Dos exploits cerrados: recompensa de Lepisma por golpes cancelados y teletransporte con beacon en combate.</li>
+          <li>Los bloques que pones ya no cuentan como mineral natural en las rutas, ni después de un reinicio.</li>
+          <li>Faltaban textos en inglés en varios menús, y el mercado rotativo ofrecía carne ritual a la facción equivocada.</li>
+        </ul>
+      </article>
+      <p class="changelog-label">Antes de la 1.0.0</p>
+      <ol class="changelog">
+        <li><span class="changelog-version">0.10.11</span><p>Icono propio para las 84 habilidades y los menús de facción arreglados.</p></li>
+        <li><span class="changelog-version">0.10.10</span><p>Cada jugador elige su idioma; menús, avisos y chat lo respetan.</p></li>
+        <li><span class="changelog-version">0.10.9</span><p>El plugin completo en inglés, con las mismas frases que en español.</p></li>
+        <li><span class="changelog-version">0.10.8</span><p>Vínculos entre jugadores y 126 mascotas, todas opcionales.</p></li>
+        <li><span class="changelog-version">0.10.7</span><p>Interfaz propia para cada facción: paneles, marcos y colores.</p></li>
+      </ol>
+      <p class="changelog-foot">De la 0.10.6 para atrás no quedaron notas.</p>
+    </section>
+
+    <section class="section wrap" id="diarios">
+      <h2>Cinco libros que se encuentran en el mundo.</h2>
+      <p class="section-sub">Los cuatro primeros llegan a marzo de 1426, cada uno por su lado. No están ordenados por fecha. Son objetos: uno lleva las cuentas de un oficio por delante y la vida por detrás, otro es un libro de familia con las páginas del padre todavía adentro, otro son cuadernos de colegio comprados por docena. El quinto no se entiende, y eso también es a propósito.</p>
+      <div class="books">
+        <details class="book">
+          <summary>
+            <span class="book-index">01</span>
+            <span class="book-head">
+              <span class="book-title">Diario de Marco Santino</span>
+              <span class="book-meta">Cazador, El Cierre, once meses</span>
+            </span>
+          </summary>
+          <div class="book-body">
+            <p class="entry"><span class="entry-date">abril de 1425</span>Inés: esto es para ti. Si estás leyendo es porque no te lo conté yo, y a estas alturas ya no hay forma de que te lo cuente yo. No te mentí. Simplemente hay cosas que se dicen mejor cuando uno ya no tiene que mirarte la cara.</p>
+            <p class="entry">El libro me lo dieron en el Cierre. Adelante va el trabajo: fecha, encargo, pago, firma. Atrás escribo yo. Lo comprobé: el escribano pasó las hojas de adelante dos veces y no miró el resto.</p>
+            <p class="entry"><span class="entry-date">mayo de 1425</span>Encargo: lobo en el galpón de Alderete. Llegué. Era un perro. Grande, con collar, ladrándole a un saco de harina. El viejo me pagó, me dio agua y no preguntó nada. Le dije que era un lobo igual.</p>
+            <p class="entry">Medio frasco. Eso es lo que salió.</p>
+            <p class="entry">(Lo anoto: primera vez que mentí en un trabajo. No fue por plata.)</p>
+            <p class="entry"><span class="entry-date">junio de 1425</span>Inés cumplió siete en la pieza del fondo. No puede subir la escalera. Sopló la vela y pidió que no me fuera de viaje. Le dije que no me iba.</p>
+            <p class="entry">Al otro día acepté tres trabajos. No sé bien por qué. La plata justa no era. Creo que fue por no quedarme en la casa.</p>
+            <p class="entry">Teresa no me habló en dos días. No fue por el viaje.</p>
+            <p class="entry"><span class="entry-date">julio de 1425</span>Mi padre murió en un invierno como este. Yo tenía nueve. El médico dijo fiebre y no le puso nombre. Mi madre pagó la consulta con un anillo.</p>
+            <p class="entry">Después supe que le debía plata a gente del Cierre y que la deuda se cerró sola ese invierno. Nunca me explicaron cómo se cierra sola una deuda.</p>
+            <p class="entry">Ahora debo yo. La diferencia es que yo sé a quién.</p>
+            <p class="entry"><span class="entry-date">agosto de 1425</span>Tres semanas sin escribir. No porque no pasara nada.</p>
+            <p class="entry"><span class="entry-date">septiembre de 1425</span>Cuarenta Marcas por el lobo del distrito. Cuarenta Marcas es un frasco y medio. Lo miré como se mira un trabajo.</p>
+            <p class="entry">Después me fui al otro lado del río a cobrar una escolta que pagaba menos y quedaba lejos. No sé qué hice, la verdad. Si me preguntan voy a decir que no me alcanzaba el equipo.</p>
+            <p class="entry"><span class="entry-date">octubre de 1425</span>La caravana. Me acuerdo de las mulas y de la lluvia. Me acuerdo de un hombre que contaba las cajas en voz alta, se equivocaba y volvía a empezar. Me acuerdo de llegar.</p>
+            <p class="entry">El tercer día no me acuerdo. Ni el cuarto. Del medio no hay nada.</p>
+            <p class="entry">El escribano dijo que fue el golpe. Yo no tengo golpe. Esto no se lo dije.</p>
+            <p class="entry"><span class="entry-date">noviembre de 1425</span>El hermano de Teresa vino a ofrecerse para llevarse a Inés a la costa, «hasta que esto mejore». Tenía razón en todo, una por una. Le dije que no.</p>
+            <p class="entry"><span class="entry-date">diciembre de 1425</span>Fui a la farmacia a pedir fiado. El dueño me escuchó con las manos juntas sobre el mostrador. Me dijo que pagara cuando pudiera, que había trabajo.</p>
+            <p class="entry">Olía a ceniza fría. Como un horno apagado hace días.</p>
+            <p class="entry">No pregunté qué trabajo.</p>
+            <p class="entry"><span class="entry-date">enero de 1426</span>Inés: «¿papá, eres un héroe?». Le dije que sí.</p>
+            <p class="entry"><span class="entry-date">febrero de 1426</span>La campana de la capilla sonó a las tres. El vecino dice que es el viento. No tiene badajo desde que yo era chico. Se lo sacaron para una guerra, no me acuerdo cuál.</p>
+            <p class="entry"><span class="entry-date">12 de marzo de 1426</span>El mismo frasco. El doble. Le pregunté al dueño si se había equivocado. Me dijo que no, que era el precio nuevo. Me miró como se mira a alguien que ya dijo que sí.</p>
+            <p class="entry"><span class="entry-date">13 de marzo de 1426</span>Ortiz me dio un sobre sin mirarme. Una moneda con un agujero y una hoja con tres líneas. El trabajo no tiene nombre de cliente.</p>
+            <p class="entry">Ortiz no me miró. Yo no pregunté.</p>
+            <p class="entry"><span class="entry-date">14 de marzo de 1426</span>El distrito amaneció callado. La farmacia no abrió. Dicen que alguien se llevó un camión de medicina y lo repartió en dos horas.</p>
+            <p class="entry">Con ese precio el frasco se queda en la vitrina.</p>
+            <p class="entry"><span class="entry-date">15 de marzo de 1426</span>Encargo: portal viejo. Confirmar que está muerto y que nadie lo mira. Si alguien lo mira, que deje de mirarlo.</p>
+            <p class="entry">No pregunté por la última parte.</p>
+            <p class="entry"><span class="entry-date">16 de marzo de 1426</span>Está muerto. Obsidiana mate, ceniza, ni un brillo. Lo que no está muerto es el suelo: pasto rojo alrededor, como si alguien hubiera volcado tinta. Del Nether no hay nada a cien pasos.</p>
+            <p class="entry">Clavé una estaca en el borde.</p>
+            <p class="entry">Había un viejo sentado contra la piedra, con un collar de hierro. Sin armas. Me preguntó si venía a llevármelo. Le dije que no sabía. Se rió: «ya volvieron una vez».</p>
+            <p class="entry"><span class="entry-date">16 de marzo de 1426, noche</span>Inés tosió hasta las dos. Le di agua y me quedé sentado en el borde de la cama hasta que se durmió. Después me senté acá.</p>
+            <p class="entry">Mañana tengo que decidir qué pongo en el informe.</p>
+            <p class="entry"><span class="entry-date">17 de marzo de 1426</span>Puse que no había nadie. La mano no me tembló. El escribano preguntó dos veces si estaba seguro. Dije que sí las dos.</p>
+            <p class="entry"><span class="entry-date">18 de marzo de 1426, 3 a.m.</span>Volví. No sé por qué volví, el trabajo estaba hecho. La campana sonó a las tres sin badajo. Diez minutos después salió ella.</p>
+            <p class="entry">Salió de la piedra como quien sale de su casa. Vestido negro, pelo rojizo recogido, broche de oro en el cuello, la capa arrastrando ceniza. Pasó a dos metros y dijo «buenas noches», como si nos cruzáramos en la calle.</p>
+            <p class="entry">Tenía el arma en la mano. No disparé.</p>
+            <p class="entry"><span class="entry-date">18 de marzo de 1426, más tarde</span>No sé si fue piedad o miedo. Ya me cansé de elegir la respuesta que me deja dormir. Prefiero pensar que fue cálculo: si disparaba, tenía que explicar qué hacía ahí a las tres.</p>
+            <p class="entry">El viejo ya no estaba.</p>
+            <p class="entry"><span class="entry-date">19 de marzo de 1426</span>Saqué la estaca y la puse más lejos. En tres días el borde avanzó lo que un hombre camina en tres pasos.</p>
+            <p class="entry">Si no lo mido, no sé si el pasto crece o si soy yo el que se está acercando.</p>
+            <p class="entry"><span class="entry-date">20 de marzo de 1426</span>Volví a la farmacia. El precio estaba como antes, como si alguien hubiera desarmado todo. El dueño me recibió con la misma cara. La moneda entró en su bolsillo sin ruido y no dijo gracias.</p>
+            <p class="entry"><span class="entry-date">21 de marzo de 1426</span>Teresa: de dónde salió la plata. Le dije que de un trabajo. Es verdad. No le dije quién me lo dio.</p>
+            <p class="entry"><span class="entry-date">22 de marzo de 1426</span>El frasco está en la mesa, cerrado. No lo abrí. Si lo abro y no alcanza, no sé qué hago después.</p>
+            <p class="entry"><span class="entry-date">24 de marzo de 1426</span>Había una segunda moneda en el sobre. No sé cuándo la pusieron. La primera se la di al farmacéutico. Esta no la doy.</p>
+            <p class="entry">Inés: si lees esto y yo no estoy, no busques al hombre del collar. No es él. Es el único que me dijo la verdad.</p>
+            <p class="entry">Y si alguien te dice que tu padre era un héroe, no le creas. Tu padre pagaba cuentas.</p>
+            <p class="entry entry-margin">Al dorso de esta última página, con otra letra y otra tinta: «Pagado».</p>
+          </div>
+        </details>
+
+        <details class="book">
+          <summary>
+            <span class="book-index">02</span>
+            <span class="book-head">
+              <span class="book-title">Diario de Maria Strad</span>
+              <span class="book-meta">Vampira, apellido de casa borrado, quince años</span>
+            </span>
+          </summary>
+          <div class="book-body">
+            <p class="entry"><span class="entry-date">14 de febrero de 1411</span>Padre: escribo en tu libro porque no tengo otro papel, y porque me parece justo que el primer asiento de esta vida nueva esté en la misma página donde iban los tuyos. No escribo tu nombre. Si alguien encuentra esto, que no sepa de quién es la letra de arriba.</p>
+            <p class="entry">Me mordió un hombre que no me odiaba. Eso es lo que nadie entiende. No me arrastró a un callejón: me invitó a cenar.</p>
+            <p class="entry"><span class="entry-date">16 de febrero de 1411</span>Regla primera: no bebo de quien no puede decir que no. No es moral. Es que una vez te vi vender la dirección de una casa, y a la semana la hija de esa casa te pidió indicaciones para volver al centro. Le señalaste el camino. Te dio las gracias.</p>
+            <p class="entry">Me acuerdo cada vez que alguien me ofrece el cuello.</p>
+            <p class="entry"><span class="entry-date">1412</span>Nada. No anoto nada y lo anoto igual, para que se vea que pasó un año.</p>
+            <p class="entry"><span class="entry-date">1413</span>Pasé por la casa. Mi hermana tiene dos años más que yo. Su hija me preguntó si era la tía de la foto. Le dije que sí. La foto debe tener diez años, por lo menos.</p>
+            <p class="entry">No entré. Miro desde la esquina y me voy antes de que salga la luna.</p>
+            <p class="entry"><span class="entry-date">1414</span>Me puse a leer tu libro de verdad, no solo las tapas. La columna del precio no es lo que yo pensaba. Los nombres de arriba tienen precio. Los de abajo no: solo fecha y una palabra que se repite, «devuelto».</p>
+            <p class="entry">Pregunté qué era un devuelto. Nadie me contestó. En esta familia, el que no contesta quiere decir que preguntaste bien.</p>
+            <p class="entry"><span class="entry-date">1415</span>Encontré tu cuaderno de clientes en el cajón de la cocina. No lo leí entero. Me bastó una línea: una familia que compró dos direcciones el mismo año y pagó el doble por la segunda.</p>
+            <p class="entry">Pregunté por qué el doble. Me dijeron: «porque la segunda venía de vuelta».</p>
+            <p class="entry"><span class="entry-date">1416</span>Hoy me pagaron con una moneda agujereada, de las que se llevan al cuello. El cliente dijo que era la moneda de la casa. La guardé en el lomo del libro, donde el pegamento se soltó.</p>
+            <p class="entry">Padre, tú cobrabas en oro. Yo cobro en esto.</p>
+            <p class="entry">No sé si es que el negocio se fue abajo o si hay otro negocio arriba.</p>
+            <p class="entry"><span class="entry-date">1419</span>Anoche no pude. El chico tendría diecisiete. Estaba despierto. Me miró y no dijo nada, y yo tomé igual. Cuando terminé le dije que lo sentía. Él dijo: «no importa».</p>
+            <p class="entry">No lo vuelvo a hacer.</p>
+            <p class="entry"><span class="entry-date">1420</span>Lo volví a hacer en 1419, después de escribir que no lo iba a hacer. Lo escribo para que quede. Lo hice tres veces más. Cuatro si cuento la que ya anoté arriba. Siempre de noche, siempre con la misma excusa: que era poco, que era necesario, que la alternativa era peor.</p>
+            <p class="entry">Las excusas se ordenan solas cuando uno tiene hambre.</p>
+            <p class="entry"><span class="entry-date">1421</span>Me pidieron firmar una lista de cuarenta y dos nombres con una columna vacía al lado. Pregunté qué era la columna. «El precio», me dijeron.</p>
+            <p class="entry">No firmé.</p>
+            <p class="entry">Esa misma noche, con una firma más limpia que la mía, me sacaron del apellido. No me echaron de la casa: me sacaron el apellido de la casa. Mi hermana firmó el papel. No la culpo. Tiene una hija.</p>
+            <p class="entry"><span class="entry-date">1422</span>En el sótano había un hombre con un collar de hierro. «Devuelto», decía la hoja. No tenía comprador.</p>
+            <p class="entry">Le pregunté si quería irse. Dijo que sí con la cabeza, como si la voz se le hubiera quedado adentro de la piedra. Le abrí la puerta y no lo seguí. Nunca supe adónde fue y no lo anoté.</p>
+            <p class="entry"><span class="entry-date">1424</span>Conté las fechas de la tercera columna. No son fechas de muerte: no coinciden con ninguna de las otras dos.</p>
+            <p class="entry">Van de cuarenta en cuarenta años, más o menos. Hay ocho siglos de ellas. La última está vacía.</p>
+            <p class="entry">Padre: si esto es un registro de cobros, llevamos ocho siglos cobrando. Si es un calendario, ya viene el próximo.</p>
+            <p class="entry"><span class="entry-date">6 de marzo de 1426</span>Vino un hombre a la puerta. No pidió nada. Dejó una moneda agujereada en el umbral y se fue. Olía a ceniza fría, como la casa cuando se apagan las velas del rito. Es igual a la de 1416. La guardé en el mismo lomo.</p>
+            <p class="entry">No sé qué hice después. Me quedé sentada mirando la puerta como una tonta.</p>
+            <p class="entry"><span class="entry-date">18 de marzo de 1426, madrugada</span>Fui al portal a cobrar lo que la casa no había cobrado: el devuelto de 1422, que había vuelto a sentarse en la piedra.</p>
+            <p class="entry">Había un cazador. Joven, mal afeitado, con el arma pesando de cansancio y no de miedo. Nos miramos. Le dije «buenas noches». No disparó.</p>
+            <p class="entry">No tomé al viejo. No sé explicarlo. El cazador no disparó y yo no supe qué hacer con eso.</p>
+            <p class="entry"><span class="entry-date">19 de marzo de 1426</span>Volví de día. El viejo no estaba. En el borde del pasto rojo había una estaca clavada y tres pasos más adentro otra.</p>
+            <p class="entry">Alguien está midiendo lo que avanza. No fui yo.</p>
+            <p class="entry"><span class="entry-date">25 de marzo de 1426</span>Busqué «Santino» en el libro. Aparece dos veces. La primera en tu letra, hace treinta y cuatro años, con la palabra «pagado» al lado. La segunda en la mía, con una raya.</p>
+            <p class="entry">Padre, tú cobraste a un Santino. Yo le perdoné a otro. No sé si eso es un pago o una deuda nueva.</p>
+            <p class="entry"><span class="entry-date">31 de marzo de 1426</span>La última fila de la tercera columna ya no está vacía. Tiene una fecha a lápiz, con letra que no es tuya ni mía. La fecha es dentro de un mes.</p>
+            <p class="entry">Si alguien lee esto: la columna tres no es un registro. Es un calendario. Y alguien acaba de marcar el día.</p>
+          </div>
+        </details>
+
+        <details class="book">
+          <summary>
+            <span class="book-index">03</span>
+            <span class="book-head">
+              <span class="book-title">Diario de Virgilio</span>
+              <span class="book-meta">Hombre lobo, El distrito, cinco inviernos</span>
+            </span>
+          </summary>
+          <div class="book-body">
+            <p class="entry"><span class="entry-date">febrero de 1422</span>No me da miedo la luna, me da miedo el invierno. El invierno mata más que la plata. Los que no tienen leña se mueren callados y nadie escribe su nombre en ninguna parte.</p>
+            <p class="entry">Mi hermano Tomás murió así, en febrero, con la manta hasta la nariz y sin decir que tenía frío.</p>
+            <p class="entry">Empecé este cuaderno para escribir los nombres. No por la manada. Por él.</p>
+            <p class="entry">Los que se fueron ese invierno:</p>
+            <p class="entry">Tomás, mi hermano.<br>La Vieja Rosa, que todavía no estaba muerta pero ya no salía.<br>Anselmo, el del pozo.<br>La mujer de Anselmo, que no me acuerdo cómo se llamaba. Eso también lo anoto.</p>
+            <p class="entry"><span class="entry-date">marzo de 1422</span>La Vieja Rosa se murió en marzo y me dejó el distrito. No me lo dejó escrito. Me lo dejó a mí porque los demás le tenían miedo a la papelera donde ella llevaba las cuentas.</p>
+            <p class="entry">Regla uno: si alguien del distrito no puede pagar, igual come. Y yo anoto cuánto debe. La deuda no se perdona. Se cobra cuando se puede.</p>
+            <p class="entry"><span class="entry-date">diciembre de 1422</span>Me dicen jefe y me molesta. Jefe es el que manda. Yo cobro.</p>
+            <p class="entry">Regla dos: nunca decir cuánto tengo.</p>
+            <p class="entry">Si pagas, comes. Si no pagas, igual comes y después me debes. La gente entiende esa frase mejor que cualquier discurso.</p>
+            <p class="entry"><span class="entry-date">diciembre de 1423</span>El del molino dejó de pagar tres meses. Fui con dos. No le toqué las manos: le saqué las herramientas, las dejé en el galpón y le dije que las recuperaba cuando pagara.</p>
+            <p class="entry">Regla tres: las herramientas antes que las manos.</p>
+            <p class="entry">Pagó en dos semanas. El molino estuvo parado dos semanas. En el papel se ve como una mala decisión.</p>
+            <p class="entry"><span class="entry-date">diciembre de 1424</span>El farmacéutico no me cobra. Dice que la manada hace mucho por el distrito y que él hace lo suyo.</p>
+            <p class="entry">No me gusta. Un hombre que no cobra está cobrando otra cosa. Huele a ceniza fría y tiene las manos demasiado limpias para alguien que trabaja con raíces.</p>
+            <p class="entry"><span class="entry-date">diciembre de 1424, luna</span>La luna no pregunta. El rango elige por mí. Regla cuatro: dejar la ropa doblada y el reloj encima. No pienso darles el gusto de encontrarme desnudo y con frío.</p>
+            <p class="entry"><span class="entry-date">13 de marzo de 1426</span>La medicina se triplicó.</p>
+            <p class="entry">Cuenta: once chicos con fiebre. Tres familias que no llegan a fin de mes ni en un mes bueno. Once más tres, catorce. No son catorce, son once; tres de los once son de esas familias. Lo escribo mal y lo dejo mal.</p>
+            <p class="entry">No fue una decisión de jefe. Fue una resta.</p>
+            <p class="entry"><span class="entry-date">14 de marzo de 1426</span>Bajamos un camión. No fue negocio. Repartimos todo en dos horas y dejé la caja vacía a propósito, para que sepan que no fue un accidente.</p>
+            <p class="entry">Regla cinco: el que maneja no se nombra.</p>
+            <p class="entry">El que manejó tiene diecinueve. Le dije que si venían a preguntar iba a decir que fui yo. Le temblaban las manos, y no por miedo.</p>
+            <p class="entry"><span class="entry-date">15 de marzo de 1426</span>Vino el farmacéutico. Se sentó enfrente, no mencionó el camión y me ofreció un favor. Le dije que no necesito favores, que necesito precios.</p>
+            <p class="entry">Se rió como se ríe la gente que ya ganó. Antes de irse dijo: «los favores también tienen precio, y el tuyo lo va a pagar otro». Lo anoto tal cual porque no sé qué significa.</p>
+            <p class="entry"><span class="entry-date">17 de marzo de 1426</span>Le dejé el cuaderno de los nombres a la chica de las velas, la que me debe un favor y no le tiene miedo a la luna. Le dije que si me pasa algo lo abra.</p>
+            <p class="entry">Me preguntó si tenía miedo. Le dije que no, que tengo frío.</p>
+            <p class="entry"><span class="entry-date">18 de marzo de 1426</span>Dos de los míos vieron a un hombre flaco con un arma en el portal viejo, a las tres. También vieron a una mujer de negro saliendo de la piedra.</p>
+            <p class="entry">Les dije que no era asunto nuestro. Primera vez que les miento. Es asunto nuestro, pero no sé de qué lado.</p>
+            <p class="entry"><span class="entry-date">20 de marzo de 1426</span>Fui a la farmacia a ver si había vuelto el precio. Volvió.</p>
+            <p class="entry">En la cola había un hombre flaco pagando con una moneda agujereada. Pagó el frasco, se lo guardó en el abrigo y se fue sin contar el cambio. Se lo veía como si le hubieran devuelto algo.</p>
+            <p class="entry"><span class="entry-date">21 de marzo de 1426</span>Le pregunté al farmacéutico por qué bajó el precio. Me dijo: «terminó el trabajo».</p>
+            <p class="entry">No le pregunté qué trabajo. Pagué y me fui.</p>
+            <p class="entry">Esa tarde llovió y no abrí la puerta a nadie. Conté lo que quedaba en la caja dos veces y me dio lo mismo las dos.</p>
+            <p class="entry"><span class="entry-date">26 de marzo de 1426</span>Vinieron dos hombres a preguntar por el cuaderno. Dijeron que eran del Cierre. Olían a ceniza.</p>
+            <p class="entry">Les dije que lo quemé. Se fueron sin discutir. Eso me dejó peor que si hubieran discutido.</p>
+            <p class="entry">Regla seis: no escribir la regla seis.</p>
+          </div>
+        </details>
+
+        <details class="book">
+          <summary>
+            <span class="book-index">04</span>
+            <span class="book-head">
+              <span class="book-title">Grimorio Personal de Cassandra</span>
+              <span class="book-meta">Bruja, Círculo del valle, dos inviernos</span>
+            </span>
+          </summary>
+          <div class="book-body">
+            <p class="entry"><span class="entry-date">12 de enero de 1426</span>Si eres de mi círculo y estás leyendo esto, devuélvelo. Si no eres de mi círculo, sigue leyendo: total, ya lo abriste.</p>
+            <p class="entry">Las normas dicen que una novicia no lleva cuaderno propio. El cuaderno es del círculo, la letra es del círculo, la memoria es del círculo. Tengo veintiún años y todavía no sé qué significa esa frase. Por eso lo escribo.</p>
+            <p class="entry"><span class="entry-date">14 de enero de 1426</span>Compré este cuaderno en el mercado por dos cobres. No lo digo por el precio. Lo digo porque las hojas son gruesas y la tinta no traspasa, y eso, para lo que yo escribo, importa.</p>
+            <p class="entry"><span class="entry-date">18 de enero de 1426</span>Mi madre vive a cuatro calles. Nos saludamos cuando nos cruzamos. Es cortés. Me pregunta por el trabajo, yo le pregunto por la rodilla, y después seguimos caminando.</p>
+            <p class="entry">Antes me esperaba con la cena. Lo que no me acuerdo es cuándo dejó de hacerlo.</p>
+            <p class="entry"><span class="entry-date">22 de enero de 1426</span>Las velas del rito huelen a ceniza fría. Toda la casa queda así después. Los platos, el pelo, la ropa de cama. Vuelvo de la casa de las ancianas y me tengo que lavar dos veces. A la segunda ya no sirve de nada, pero me lavo igual.</p>
+            <p class="entry"><span class="entry-date">27 de enero de 1426</span>Busqué a mi madre en el registro de la parroquia. Aparece dos veces. El mismo nombre, la misma fecha de nacimiento, dos fechas de bautizo distintas: una de hace cuarenta y dos años y otra de hace veintidós.</p>
+            <p class="entry">Le pregunté a la más vieja del círculo. Me dijo que el cura de entonces escribía mal.</p>
+            <p class="entry">Los curas escriben mal. Las fechas no.</p>
+            <p class="entry"><span class="entry-date">3 de febrero de 1426</span>Revisé el rito de fundación tres veces. La palabra que las ancianas traducen como «sangre» aparece dos veces en el libro original. La segunda está escrita distinto: misma raíz, otra terminación.</p>
+            <p class="entry">No significa sangre. Significa «lo que se recuerda».</p>
+            <p class="entry">Se lo dije a la anciana que me enseñó a leer. Me mandó a callar. No me dijo que me equivocara.</p>
+            <p class="entry"><span class="entry-date">9 de febrero de 1426</span>Hice la prueba con un rito menor. No cobré sangre. Cobré un recuerdo: el olor del pan de mi madre cuando salía del horno.</p>
+            <p class="entry">Funcionó igual. La vela se apagó, el círculo se cerró, y la anciana que me miraba desde la puerta no dijo nada.</p>
+            <p class="entry">Elegí ese recuerdo a propósito. Era pequeño. Total, era pan.</p>
+            <p class="entry"><span class="entry-date">12 de febrero de 1426</span>Le conté a tres. Una se fue sin despedirse. Otra dijo que la tradición no se discute. La tercera no dijo nada y desde esa noche duerme con el libro debajo de la almohada.</p>
+            <p class="entry">Las tres tienen más de sesenta. Yo tengo veintiuno y no les tengo miedo. Tengo miedo de lo que van a hacer sin mí.</p>
+            <p class="entry"><span class="entry-date">19 de febrero de 1426</span>Empecé a anotar los olvidos del valle. No los míos: los de la gente.</p>
+            <p class="entry">La viuda de la calle del molino no reconoce a su hijo mayor. La panadería cambió de nombre porque nadie se acordaba del viejo. Al callejón del pozo le pusieron «calle nueva» hace seis años y antes tenía otro nombre que no está escrito en ninguna parte.</p>
+            <p class="entry">Los olvidos normales son de cosas. Estos son de personas.</p>
+            <p class="entry"><span class="entry-date">26 de febrero de 1426</span>Ya está. Lo entendí.</p>
+            <p class="entry">El círculo lleva generaciones cobrando memoria ajena. No la nuestra: la de la gente del valle. Por eso hay abuelos que no reconocen a sus nietos y nadie lo llama robo. No lo llaman robo porque no hay nada que robar. La memoria no se puede devolver.</p>
+            <p class="entry">Eso es lo que lo hace perfecto.</p>
+            <p class="entry"><span class="entry-date">28 de febrero de 1426</span>Prohibí esa parte del rito en mi mesa. Se fueron tres. Se quedaron otras tres y ninguna me mira igual.</p>
+            <p class="entry">Una de las que se fue me dijo: «si te vas, te olvidamos». No lo dijo como amenaza. Lo dijo como quien explica el clima.</p>
+            <p class="entry"><span class="entry-date">4 de marzo de 1426</span>Ya no me acuerdo del pan.</p>
+            <p class="entry">No es que no me acuerde del sabor. No me acuerdo del pan. No me acuerdo de mi madre sacándolo del horno, ni de la mesa, ni de haber comido alguna vez en una cocina que no sea esta.</p>
+            <p class="entry">Elegí un recuerdo pequeño. Era pan. Era todo lo que tenía de ella.</p>
+            <p class="entry"><span class="entry-date">6 de marzo de 1426</span>Mi madre me preguntó si había comido. Le dije que sí.</p>
+            <p class="entry">No me acuerdo de haber comido con ella. Me acuerdo de su cara esperando la respuesta, como se espera a que alguien termine de contar algo.</p>
+            <p class="entry"><span class="entry-date">19 de marzo de 1426</span>El lobo del distrito me dejó un cuaderno hace dos días y lo tiré entre mis fojas sin leerlo. No es mío: tiene nombres del distrito y cantidades al lado, en una letra de hombre que aprieta el lápiz.</p>
+            <p class="entry">Mi madre está en la página nueve. «Viuda. Calle del molino. Debe tres.» Debajo, con otra letra más chica: «no cobrar».</p>
+            <p class="entry">El lobo le perdona la deuda a mi madre y yo no sabía que mi madre tenía deudas. Dos cosas a la vez es mucho para una tarde.</p>
+            <p class="entry"><span class="entry-date">20 de marzo de 1426</span>Bajé al sótano de la capilla a buscar los libros de la parroquia. Encontré los libros y encontré otra cosa: un libro quemado, apoyado contra la pared, con la cubierta comida por el fuego y las orillas de las páginas negras. No tiene título legible.</p>
+            <p class="entry">Las ancianas dicen que ese sótano no se toca. Nadie me dijo por qué. Copié las primeras líneas antes de que me temblara la mano. En el libro de la parroquia, al lado del nombre de mi madre, hay una palabra escrita por otra mano: «pagado».</p>
+            <p class="entry"><span class="entry-date">21 de marzo de 1426</span>Volví a leer lo que copié. No dice nada. De corrido, en voz alta, la hoja al revés. Nada.</p>
+            <p class="entry">No es un idioma que no conozco. Es uno que conozco y está mal puesto.</p>
+            <p class="entry"><span class="entry-date">29 de marzo de 1426</span>Hay una página en el libro de fundación que está en blanco, pero el papel está gastado y los bordes sucios. Alguien la leyó muchas veces antes de que quedara en blanco.</p>
+            <p class="entry">Cuando aprenda a leer lo que no está, voy a saber qué le hicieron a mi madre. Y si fui yo la que lo hizo, espero que alguien me lo diga.</p>
+            <p class="entry entry-margin">Debajo, a lápiz, con la misma letra: «¿Y el pan?»</p>
+          </div>
+        </details>
+
+        <details class="book book-burned">
+          <summary>
+            <span class="book-index">05</span>
+            <span class="book-head">
+              <span class="book-title book-title-burned">[ título ilegible ]</span>
+              <span class="book-meta">Quemado, autor desconocido</span>
+            </span>
+          </summary>
+          <div class="book-body">
+            <p class="burned-intro">Estaba apoyado contra la pared del sótano de la capilla, debajo de un estante de libros parroquiales. La cubierta está quemada hasta la mitad y las orillas de las páginas ya no existen. Esto es lo que queda legible, tal como está.</p>
+            <pre class="cipher">ecce atrop non tse sucol des supmet
+al ardeip argen non adraug le osap adraug sol sonna
+te ol euq nad sol euq nevleuv se ol euq somadivlo
+ergnas non atsab al ergnas se adenom acihc
+ryp non tse singi ryp tse airomem
+solle non neart onreifni neart us asac
+maj sert saroh son nad te eteis son namot
+muitso ni le ojepse te ojepse ni le ohcep
+nardnev rop ol oyus non rop ol ortseun
+anu noicareneg agap te al etneiugis adivlo
+te someramall ourtsnom a ol euq se ojepse
+al azinec euq sierallah ares ed solle
+eav a sol euq nadraug al atreup nis auga
+le ojepse non es epmor son somepmor sortoson</pre>
+            <p class="burned-note">Leído de corrido no dice nada. Nadie lo escribió para leerse de corrido.</p>
+            <details class="cipher-hint">
+              <summary>Pista</summary>
+              <p>Está escrito en tres lenguas: latín de iglesia, castellano de hace ocho siglos y una palabra griega que significa “espejo”. El que lo copió tenía la costumbre de escribir cada palabra al revés, como la vería en un espejo, y nunca la perdió. Y tenía otra manía: algo se esconde en el borde de los renglones.</p>
+            </details>
+          </div>
+        </details>
+      </div>
+      <p class="books-note">Los diarios están solo en español: son los textos que aparecen en el juego.</p>
+    </section>
+
+    <section class="section wrap" id="pronto">
+      <h2>Busco gente dispuesta a romperlo.</h2>
+      <p>No hay formulario ni lista de espera. Me escribes, hablamos un rato y, si calza, te paso la IP.</p>
+      <ul class="soon-facts">
+        <li>Minecraft Java 1.21.4, sin Forge ni Fabric.</li>
+        <li>Español o inglés: cada uno ve menús, avisos y notas en su idioma.</li>
+        <li>Horarios a coordinar. Esto no es un servidor 24/7.</li>
+        <li>Ganas de probar cosas rotas, reportarlas y decir qué está mal sin adornos.</li>
+      </ul>
+      <p class="soon-contact">Si te interesa, escríbeme por Reddit a <a href="https://www.reddit.com/user/BlancaDaVita/" rel="noopener">BlancaDaVita</a> o agrégame en Discord: <strong>yosecaminar</strong>.</p>
+      <p class="soon-closing">Solo se instala textura que ofrece el servidor, no mods de forge o fabric requerido, hay incluido minimapa sin necesidad de mod.</p>
+      <p class="soon-actions"><a href="#top">Volver al inicio</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer wrap">
+    <div class="footer-brand">
+      <img src="assets/favicon.svg" alt="" width="20" height="20">
+      <span>Sanguinaris<span>MC</span></span>
+    </div>
+    <p>Esto lo armo yo, de a poco, con alguien que apoya el proyecto. Acá no hay tienda ni preventa: si quieres mirar cómo va, esta página es todo.</p>
+    <p class="footer-note">Uso herramientas de IA en el proyecto. Prefiero decirlo yo antes de que lo note otro.</p>
+    <p class="footer-legal">Minecraft es una marca de Mojang Studios. SanguinarisMC es un proyecto independiente y no está afiliado a Mojang, Microsoft, Stunlock Studios ni V Rising. © <span id="year">2026</span> SanguinarisMC.</p>
+  </footer>
+</body>
+</html>
